@@ -11,82 +11,146 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: { fontFamily: { serif: ['"Instrument Serif"', 'Georgia', 'serif'], sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'], mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] }, colors: { obsidian: '#07080A', surface: '#0F1115', ink: '#F9FAFB' } } } };
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+          colors: { obsidian: '#07080A', surface: '#0F1115', ink: '#F9FAFB' }
+        }
+      }
+    };
   </script>
-  <style>html{scroll-padding-top:6rem} ::selection{background:#F9FAFB;color:#07080A}</style>
+  <style>
+    html { scroll-padding-top: 6rem; }
+    ::selection { background: #F9FAFB; color: #07080A; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #07080A; }
+    ::-webkit-scrollbar-thumb { background: #23262E; border-radius: 9999px; border: 2px solid #07080A; }
+  </style>
 </head>
-<body class="bg-obsidian font-sans text-ink antialiased">
-  <header class="border-b border-white/5 bg-obsidian/90 backdrop-blur">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-      <a href="../" class="flex items-center" aria-label="Pilaris home"><img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto sm:h-7" /></a>
-      <a href="../" class="text-sm text-gray-300 transition hover:text-white">Back to home</a>
+<body class="overflow-x-hidden bg-obsidian font-sans text-ink antialiased">
+  <div class="relative isolate overflow-hidden border-b border-white/5">
+    <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#182030] via-[#171922] to-obsidian"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_55%)]"></div>
     </div>
-  </header>
 
-  <main class="mx-auto max-w-3xl px-6 py-14 sm:py-20">
-    <p class="font-mono text-xs uppercase tracking-[0.14em] text-gray-400">Legal</p>
-    <h1 class="mt-3 font-serif text-4xl leading-tight tracking-[-0.03em] text-white sm:text-5xl">Acceptable Use Policy</h1>
-    <p class="mt-4 text-sm text-gray-400">Last updated: November 10, 2026</p>
+    <header class="relative z-40">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-5">
+        <a href="../" class="flex shrink-0 items-center" aria-label="Pilaris home">
+          <img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto sm:h-7" />
+        </a>
+        <nav class="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-2 backdrop-blur-md md:flex" aria-label="Primary">
+          <a href="../#servers" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Servers</a>
+          <a href="../#network" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Network</a>
+          <a href="../#credits" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Earn credits</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="../" class="text-[13px] font-medium text-gray-300 transition hover:text-white">Back to home</a>
+          <a href="https://console.pilaris.pro" class="rounded-full bg-white px-5 py-2 text-[13px] font-semibold text-obsidian transition hover:bg-gray-200">Get started</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="mt-10 space-y-8 text-sm leading-relaxed text-gray-300 sm:text-[15px]">
-      <section class="space-y-3">
-        <p>This Acceptable Use Policy ("AUP") describes rules for using Pilaris websites, control panel, and game server hosting services (the "Services"). It is part of our <a href="../terms/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Terms of Service</a>. Violations may result in suspension or termination of accounts, servers, or credits.</p>
-      </section>
+    <section class="relative z-10 mx-auto max-w-7xl px-6 pb-14 pt-8 sm:pb-20 sm:pt-14">
+      <div class="mx-auto max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 backdrop-blur-md">
+          <span class="font-mono text-[11px] uppercase tracking-[0.14em] text-gray-300">Legal</span>
+        </div>
+        <h1 class="mt-6 font-serif text-5xl leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl">Acceptable Use Policy</h1>
+        <p class="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-gray-400 sm:text-lg">Rules for safe, fair, and lawful use of Pilaris services and game servers.</p>
+        <p class="mt-4 font-mono text-xs text-gray-500">Last updated: November 10, 2026</p>
+      </div>
+    </section>
+  </div>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">1. Eligibility and age</h2>
-        <p>You must be at least <strong class="text-white">16 years of age</strong> to use the Services. Accounts used by individuals under 16 may be suspended or terminated.</p>
-      </section>
+  <main class="mx-auto max-w-7xl px-6 py-12 sm:py-16">
+    <div class="grid gap-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-12">
+      <aside class="lg:sticky lg:top-8 lg:self-start">
+        <div class="rounded-2xl border border-white/10 bg-surface p-4">
+          <p class="px-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">Legal pages</p>
+          <nav class="mt-3 flex flex-col gap-1" aria-label="Legal">
+            <a href="../terms/" class="rounded-lg px-3 py-2 text-sm text-gray-300 transition hover:bg-white/5 hover:text-white">Terms of Service</a>
+            <a href="../privacy/" class="rounded-lg px-3 py-2 text-sm text-gray-300 transition hover:bg-white/5 hover:text-white">Privacy Policy</a>
+            <a href="../acceptable-use/" class="rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white">Acceptable Use</a>
+          </nav>
+        </div>
+      </aside>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">2. Prohibited activities</h2>
-        <p>You may not use the Services to engage in, facilitate, or promote any of the following:</p>
-        <ul class="list-disc space-y-2 pl-5 text-gray-300">
-          <li><strong class="text-white">Illegal activity:</strong> Any activity that violates applicable law or regulation, including distribution of illegal content, infringement of intellectual property rights, or operation of unauthorized services.</li>
-          <li><strong class="text-white">Malware and abuse:</strong> Hosting, distributing, or operating malware, botnets, command-and-control servers, phishing, credential theft, exploit kits, or other harmful code.</li>
-          <li><strong class="text-white">Network attacks and interference:</strong> Launching, participating in, or facilitating DDoS attacks, port scanning, intrusion attempts, traffic flooding, amplification, spoofing, or any activity intended to disrupt or gain unauthorized access to systems or networks.</li>
-          <li><strong class="text-white">Unauthorized access:</strong> Attempting to access accounts, servers, panels, data, or systems without permission; bypassing authentication, rate limits, or security controls; or probing for vulnerabilities except as explicitly authorized.</li>
-          <li><strong class="text-white">Resource abuse:</strong> Cryptocurrency mining, blockchain validation, CPU/GPU-intensive workloads unrelated to permitted game hosting, proxy/VPN resale, file hosting/dumping, or any use that unfairly consumes shared resources or degrades service for others.</li>
-          <li><strong class="text-white">Harmful or abusive content:</strong> Content that promotes violence, terrorism, child sexual abuse or exploitation, harassment, hate, doxxing, or non-consensual intimate imagery. We have zero tolerance for child sexual abuse material (CSAM) and will report it to appropriate authorities where required.</li>
-          <li><strong class="text-white">Spam and fraud:</strong> Sending spam, operating scams, abusing offerwalls or credit systems, creating multiple accounts to evade limits or bans, or using stolen/fraudulent identities or payment/offer methods.</li>
-          <li><strong class="text-white">Circumvention:</strong> Evading suspensions, bans, resource limits, or geographic/technical restrictions.</li>
-        </ul>
-      </section>
+      <article class="min-w-0">
+        <div class="rounded-3xl border border-white/10 bg-surface p-6 sm:p-10">
+          <div class="space-y-8 text-sm leading-relaxed text-gray-300 sm:text-[15px]">
+            <section class="space-y-3">
+              <p>This Acceptable Use Policy ("AUP") describes rules for using Pilaris websites, control panel, and game server hosting services (the "Services"). It is part of our <a href="../terms/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Terms of Service</a>. Violations may result in suspension or termination of accounts, servers, or credits.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">3. Game servers and user communities</h2>
-        <p>You are responsible for the operation of your servers, installed software/mods/plugins, and the behavior of players and sub-users you invite. You must comply with the terms and licenses of the games and software you run. You must take reasonable steps to moderate your communities and prevent prohibited activities on servers you control.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">1. Eligibility and age</h2>
+              <p>You must be at least <strong class="text-white">16 years of age</strong> to use the Services. Accounts used by individuals under 16 may be suspended or terminated.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">4. Fair use and service limits</h2>
-        <p>Because Pilaris is a free, shared hosting platform, we may apply fair-use limits on CPU, memory, disk, network, backup frequency, number of servers, or credit usage to maintain stability. We may throttle, suspend, or remove servers that negatively impact platform performance or other users, even if not explicitly listed above.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">2. Prohibited activities</h2>
+              <p>You may not use the Services to engage in, facilitate, or promote any of the following:</p>
+              <ul class="list-disc space-y-2 pl-5 text-gray-300">
+                <li><strong class="text-white">Illegal activity:</strong> Any activity that violates applicable law or regulation, including distribution of illegal content, infringement of intellectual property rights, or operation of unauthorized services.</li>
+                <li><strong class="text-white">Malware and abuse:</strong> Hosting, distributing, or operating malware, botnets, command-and-control servers, phishing, credential theft, exploit kits, or other harmful code.</li>
+                <li><strong class="text-white">Network attacks and interference:</strong> Launching, participating in, or facilitating DDoS attacks, port scanning, intrusion attempts, traffic flooding, amplification, spoofing, or any activity intended to disrupt or gain unauthorized access to systems or networks.</li>
+                <li><strong class="text-white">Unauthorized access:</strong> Attempting to access accounts, servers, panels, data, or systems without permission; bypassing authentication, rate limits, or security controls; or probing for vulnerabilities except as explicitly authorized.</li>
+                <li><strong class="text-white">Resource abuse:</strong> Cryptocurrency mining, blockchain validation, CPU/GPU-intensive workloads unrelated to permitted game hosting, proxy/VPN resale, file hosting/dumping, or any use that unfairly consumes shared resources or degrades service for others.</li>
+                <li><strong class="text-white">Harmful or abusive content:</strong> Content that promotes violence, terrorism, child sexual abuse or exploitation, harassment, hate, doxxing, or non-consensual intimate imagery. We have zero tolerance for child sexual abuse material (CSAM) and will report it to appropriate authorities where required.</li>
+                <li><strong class="text-white">Spam and fraud:</strong> Sending spam, operating scams, abusing offerwalls or credit systems, creating multiple accounts to evade limits or bans, or using stolen/fraudulent identities or payment/offer methods.</li>
+                <li><strong class="text-white">Circumvention:</strong> Evading suspensions, bans, resource limits, or geographic/technical restrictions.</li>
+              </ul>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">5. Enforcement</h2>
-        <p>We may investigate suspected violations and take action at our discretion, including warnings, removal of content, revocation of credits, temporary suspension, or permanent termination of accounts and servers. In urgent cases (such as active attacks, malware, or legal risk), we may act without prior notice. We may preserve and disclose information to comply with legal obligations or protect safety.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">3. Game servers and user communities</h2>
+              <p>You are responsible for the operation of your servers, installed software/mods/plugins, and the behavior of players and sub-users you invite. You must comply with the terms and licenses of the games and software you run. You must take reasonable steps to moderate your communities and prevent prohibited activities on servers you control.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">6. Reporting abuse</h2>
-        <p>To report abuse, security issues, or violations of this AUP, please contact us through the official Pilaris support or community channels listed on our website. Include relevant details (such as server ID, timestamps, IPs, or evidence) to help us investigate.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">4. Fair use and service limits</h2>
+              <p>Because Pilaris is a free, shared hosting platform, we may apply fair-use limits on CPU, memory, disk, network, backup frequency, number of servers, or credit usage to maintain stability. We may throttle, suspend, or remove servers that negatively impact platform performance or other users, even if not explicitly listed above.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">7. Changes to this policy</h2>
-        <p>We may update this AUP from time to time. We will update the "Last updated" date and, where appropriate, provide notice through the Services. Continued use of the Services after changes become effective constitutes acceptance of the updated policy.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">5. Enforcement</h2>
+              <p>We may investigate suspected violations and take action at our discretion, including warnings, removal of content, revocation of credits, temporary suspension, or permanent termination of accounts and servers. In urgent cases (such as active attacks, malware, or legal risk), we may act without prior notice. We may preserve and disclose information to comply with legal obligations or protect safety.</p>
+            </section>
+
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">6. Reporting abuse</h2>
+              <p>To report abuse, security issues, or violations of this AUP, please contact us through the official Pilaris support or community channels listed on our website. Include relevant details (such as server ID, timestamps, IPs, or evidence) to help us investigate.</p>
+            </section>
+
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">7. Changes to this policy</h2>
+              <p>We may update this AUP from time to time. We will update the "Last updated" date and, where appropriate, provide notice through the Services. Continued use of the Services after changes become effective constitutes acceptance of the updated policy.</p>
+            </section>
+          </div>
+        </div>
+      </article>
     </div>
   </main>
 
-  <footer class="border-t border-white/5">
-    <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between">
-      <p>&copy; 2026 Pilaris. All rights reserved. Not affiliated with any of the games mentioned.</p>
-      <div class="flex gap-4">
-        <a href="../privacy/" class="hover:text-white">Privacy</a>
-        <a href="../terms/" class="hover:text-white">Terms</a>
-        <a href="../acceptable-use/" class="hover:text-white">Acceptable Use</a>
+  <footer class="border-t border-white/5 bg-obsidian">
+    <div class="mx-auto max-w-7xl px-6 py-10">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto opacity-90" />
+          <p class="mt-3 text-xs text-gray-400">&copy; 2026 Pilaris. All rights reserved. Not affiliated with any of the games mentioned.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-400">
+          <a href="../privacy/" class="transition hover:text-white">Privacy</a>
+          <a href="../terms/" class="transition hover:text-white">Terms</a>
+          <a href="../acceptable-use/" class="text-white">Acceptable Use</a>
+          <a href="../" class="transition hover:text-white">Home</a>
+        </div>
       </div>
     </div>
   </footer>

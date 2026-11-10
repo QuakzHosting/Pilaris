@@ -11,116 +11,180 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: { fontFamily: { serif: ['"Instrument Serif"', 'Georgia', 'serif'], sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'], mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] }, colors: { obsidian: '#07080A', surface: '#0F1115', ink: '#F9FAFB' } } } };
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+          colors: { obsidian: '#07080A', surface: '#0F1115', ink: '#F9FAFB' }
+        }
+      }
+    };
   </script>
-  <style>html{scroll-padding-top:6rem} ::selection{background:#F9FAFB;color:#07080A}</style>
+  <style>
+    html { scroll-padding-top: 6rem; }
+    ::selection { background: #F9FAFB; color: #07080A; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #07080A; }
+    ::-webkit-scrollbar-thumb { background: #23262E; border-radius: 9999px; border: 2px solid #07080A; }
+  </style>
 </head>
-<body class="bg-obsidian font-sans text-ink antialiased">
-  <header class="border-b border-white/5 bg-obsidian/90 backdrop-blur">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-      <a href="../" class="flex items-center" aria-label="Pilaris home"><img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto sm:h-7" /></a>
-      <a href="../" class="text-sm text-gray-300 transition hover:text-white">Back to home</a>
+<body class="overflow-x-hidden bg-obsidian font-sans text-ink antialiased">
+  <div class="relative isolate overflow-hidden border-b border-white/5">
+    <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#182030] via-[#171922] to-obsidian"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_55%)]"></div>
     </div>
-  </header>
 
-  <main class="mx-auto max-w-3xl px-6 py-14 sm:py-20">
-    <p class="font-mono text-xs uppercase tracking-[0.14em] text-gray-400">Legal</p>
-    <h1 class="mt-3 font-serif text-4xl leading-tight tracking-[-0.03em] text-white sm:text-5xl">Terms of Service</h1>
-    <p class="mt-4 text-sm text-gray-400">Last updated: November 10, 2026</p>
+    <header class="relative z-40">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-5">
+        <a href="../" class="flex shrink-0 items-center" aria-label="Pilaris home">
+          <img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto sm:h-7" />
+        </a>
+        <nav class="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-2 backdrop-blur-md md:flex" aria-label="Primary">
+          <a href="../#servers" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Servers</a>
+          <a href="../#network" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Network</a>
+          <a href="../#credits" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Earn credits</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="../" class="text-[13px] font-medium text-gray-300 transition hover:text-white">Back to home</a>
+          <a href="https://console.pilaris.pro" class="rounded-full bg-white px-5 py-2 text-[13px] font-semibold text-obsidian transition hover:bg-gray-200">Get started</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="mt-10 space-y-8 text-sm leading-relaxed text-gray-300 sm:text-[15px]">
-      <section class="space-y-3">
-        <p>These Terms of Service ("Terms") govern your access to and use of Pilaris websites, control panel, and game server hosting services (the "Services"). By creating an account, accessing, or using the Services, you agree to these Terms and to our <a href="../privacy/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Privacy Policy</a> and <a href="../acceptable-use/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Acceptable Use Policy</a>.</p>
-        <p>If you do not agree, do not use the Services.</p>
-      </section>
+    <section class="relative z-10 mx-auto max-w-7xl px-6 pb-14 pt-8 sm:pb-20 sm:pt-14">
+      <div class="mx-auto max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 backdrop-blur-md">
+          <span class="font-mono text-[11px] uppercase tracking-[0.14em] text-gray-300">Legal</span>
+        </div>
+        <h1 class="mt-6 font-serif text-5xl leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl">Terms of Service</h1>
+        <p class="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-gray-400 sm:text-lg">The rules for using Pilaris, our free credit-based game server hosting, and your account.</p>
+        <p class="mt-4 font-mono text-xs text-gray-500">Last updated: November 10, 2026</p>
+      </div>
+    </section>
+  </div>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">1. Eligibility and age requirement</h2>
-        <p>You must be at least <strong class="text-white">16 years of age</strong> to create an account or use the Services. By using the Services, you represent that you are 16 or older and have the legal capacity to enter into these Terms. If you are under the age required by applicable law to consent to data processing or online services in your location, you may only use the Services with permission and supervision of a parent or legal guardian, and in all cases you must be at least 16.</p>
-        <p>We may suspend or terminate accounts that do not meet this requirement.</p>
-      </section>
+  <main class="mx-auto max-w-7xl px-6 py-12 sm:py-16">
+    <div class="grid gap-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-12">
+      <aside class="lg:sticky lg:top-8 lg:self-start">
+        <div class="rounded-2xl border border-white/10 bg-surface p-4">
+          <p class="px-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-gray-500">Legal pages</p>
+          <nav class="mt-3 flex flex-col gap-1" aria-label="Legal">
+            <a href="../terms/" class="rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white">Terms of Service</a>
+            <a href="../privacy/" class="rounded-lg px-3 py-2 text-sm text-gray-300 transition hover:bg-white/5 hover:text-white">Privacy Policy</a>
+            <a href="../acceptable-use/" class="rounded-lg px-3 py-2 text-sm text-gray-300 transition hover:bg-white/5 hover:text-white">Acceptable Use</a>
+          </nav>
+        </div>
+      </aside>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">2. Accounts and security</h2>
-        <p>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. You agree to provide accurate information, keep it up to date, and promptly notify us of any unauthorized access or security incident. We are not liable for losses arising from your failure to protect your account.</p>
-        <p>We may require identity or ownership verification in connection with abuse prevention, account recovery, or enforcement of these Terms.</p>
-      </section>
+      <article class="min-w-0">
+        <div class="rounded-3xl border border-white/10 bg-surface p-6 sm:p-10">
+          <div class="prose prose-invert max-w-none space-y-8 text-sm leading-relaxed text-gray-300 sm:text-[15px]">
+            <section class="space-y-3">
+              <p>These Terms of Service ("Terms") govern your access to and use of Pilaris websites, control panel, and game server hosting services (the "Services"). By creating an account, accessing, or using the Services, you agree to these Terms and to our <a href="../privacy/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Privacy Policy</a> and <a href="../acceptable-use/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Acceptable Use Policy</a>.</p>
+              <p>If you do not agree, do not use the Services.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">3. Free hosting, credits, and offerwalls</h2>
-        <p>Pilaris provides game server hosting on a free, credit-based model. Credits may be earned by completing offers through third-party offerwalls (such as Bitcotasks) or other methods we make available. Credits have no cash value, are not legal tender, are non-refundable, and may not be sold, transferred, or exchanged except as expressly permitted by us.</p>
-        <p>Offerwalls and offers are operated by third parties and are subject to their own terms and privacy practices. We do not control offer availability, completion requirements, or payout timing, and we are not responsible for third-party offers. We may adjust credit values, earning rates, server resource costs, or availability of earning methods at any time.</p>
-        <p>Server availability, resource allocations, and included features (such as backups or DDoS protection) are provided on an "as available" basis and may vary by node, location, or demand. We may impose limits to maintain service stability and fair use.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">1. Eligibility and age requirement</h2>
+              <p>You must be at least <strong class="text-white">16 years of age</strong> to create an account or use the Services. By using the Services, you represent that you are 16 or older and have the legal capacity to enter into these Terms. If you are under the age required by applicable law to consent to data processing or online services in your location, you may only use the Services with permission and supervision of a parent or legal guardian, and in all cases you must be at least 16.</p>
+              <p>We may suspend or terminate accounts that do not meet this requirement.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">4. Your content and servers</h2>
-        <p>You retain ownership of content, game data, configurations, and files you upload or create on the Services ("Your Content"). You grant Pilaris a limited license to host, store, transmit, back up, and process Your Content solely to provide and operate the Services.</p>
-        <p>You are solely responsible for Your Content, your server configuration, and the conduct of users who access your servers. You must have all necessary rights to use and host Your Content and to run any software, mods, or plugins you install.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">2. Accounts and security</h2>
+              <p>You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. You agree to provide accurate information, keep it up to date, and promptly notify us of any unauthorized access or security incident. We are not liable for losses arising from your failure to protect your account.</p>
+              <p>We may require identity or ownership verification in connection with abuse prevention, account recovery, or enforcement of these Terms.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">5. Acceptable use</h2>
-        <p>Your use of the Services must comply with our <a href="../acceptable-use/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Acceptable Use Policy</a>. You may not use the Services for unlawful, abusive, harmful, or disruptive activities. We may investigate suspected violations and take enforcement action as described in these Terms.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">3. Free hosting, credits, and offerwalls</h2>
+              <p>Pilaris provides game server hosting on a free, credit-based model. Credits may be earned by completing offers through third-party offerwalls (such as Bitcotasks) or other methods we make available. Credits have no cash value, are not legal tender, are non-refundable, and may not be sold, transferred, or exchanged except as expressly permitted by us.</p>
+              <p>Offerwalls and offers are operated by third parties and are subject to their own terms and privacy practices. We do not control offer availability, completion requirements, or payout timing, and we are not responsible for third-party offers. We may adjust credit values, earning rates, server resource costs, or availability of earning methods at any time.</p>
+              <p>Server availability, resource allocations, and included features (such as backups or DDoS protection) are provided on an "as available" basis and may vary by node, location, or demand. We may impose limits to maintain service stability and fair use.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">6. Backups, data loss, and availability</h2>
-        <p>While we may provide backup or snapshot features, backups are not guaranteed. You are responsible for maintaining your own copies of important data. The Services may experience downtime, maintenance, hardware failure, network issues, attacks, or data loss. We do not guarantee uninterrupted or error-free operation.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">4. Your content and servers</h2>
+              <p>You retain ownership of content, game data, configurations, and files you upload or create on the Services ("Your Content"). You grant Pilaris a limited license to host, store, transmit, back up, and process Your Content solely to provide and operate the Services.</p>
+              <p>You are solely responsible for Your Content, your server configuration, and the conduct of users who access your servers. You must have all necessary rights to use and host Your Content and to run any software, mods, or plugins you install.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">7. Suspension and termination</h2>
-        <p>We may suspend, restrict, or terminate your access to the Services, servers, or credits at any time if we reasonably believe you have violated these Terms or the Acceptable Use Policy, pose a security or legal risk, fail to meet eligibility requirements, or if necessary to protect the Services or other users. Where practical, we may provide notice, but we are not required to do so in urgent cases.</p>
-        <p>You may stop using the Services at any time. Upon termination, your right to use the Services ends and we may delete accounts, servers, and data in accordance with our operational practices, subject to any legal obligations.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">5. Acceptable use</h2>
+              <p>Your use of the Services must comply with our <a href="../acceptable-use/" class="text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Acceptable Use Policy</a>. You may not use the Services for unlawful, abusive, harmful, or disruptive activities. We may investigate suspected violations and take enforcement action as described in these Terms.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">8. Third-party services and game affiliations</h2>
-        <p>The Services may integrate with or link to third-party services (including Discord, offerwalls, and game software/mod platforms). Those services are governed by their own terms and policies, and we are not responsible for them.</p>
-        <p>Pilaris is not affiliated with, endorsed by, or sponsored by Mojang Studios, Microsoft, Facepunch Studios, Pocketpair, Iron Gate, Valve, Studio Wildcard, Snail Games, or any other game publisher or developer mentioned on the site. All game names, trademarks, and assets belong to their respective owners.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">6. Backups, data loss, and availability</h2>
+              <p>While we may provide backup or snapshot features, backups are not guaranteed. You are responsible for maintaining your own copies of important data. The Services may experience downtime, maintenance, hardware failure, network issues, attacks, or data loss. We do not guarantee uninterrupted or error-free operation.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">9. Intellectual property</h2>
-        <p>The Services, including our website, branding, software, and documentation (excluding Your Content and third-party materials), are owned by Pilaris or its licensors and are protected by applicable intellectual property laws. Except as expressly permitted, you may not copy, modify, distribute, sell, or reverse engineer any part of the Services.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">7. Suspension and termination</h2>
+              <p>We may suspend, restrict, or terminate your access to the Services, servers, or credits at any time if we reasonably believe you have violated these Terms or the Acceptable Use Policy, pose a security or legal risk, fail to meet eligibility requirements, or if necessary to protect the Services or other users. Where practical, we may provide notice, but we are not required to do so in urgent cases.</p>
+              <p>You may stop using the Services at any time. Upon termination, your right to use the Services ends and we may delete accounts, servers, and data in accordance with our operational practices, subject to any legal obligations.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">10. Disclaimers</h2>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, OR THAT DATA WILL BE PRESERVED.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">8. Third-party services and game affiliations</h2>
+              <p>The Services may integrate with or link to third-party services (including Discord, offerwalls, and game software/mod platforms). Those services are governed by their own terms and policies, and we are not responsible for them.</p>
+              <p>Pilaris is not affiliated with, endorsed by, or sponsored by Mojang Studios, Microsoft, Facepunch Studios, Pocketpair, Iron Gate, Valve, Studio Wildcard, Snail Games, or any other game publisher or developer mentioned on the site. All game names, trademarks, and assets belong to their respective owners.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">11. Limitation of liability</h2>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, PILARIS AND ITS OPERATORS, AFFILIATES, AND SERVICE PROVIDERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR SERVICE AVAILABILITY, ARISING OUT OF OR RELATED TO YOUR USE OF (OR INABILITY TO USE) THE SERVICES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THE SERVICES WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO US FOR THE SERVICES IN THE TWELVE (12) MONTHS BEFORE THE CLAIM OR (B) USD $0, REFLECTING THE FREE NATURE OF THE SERVICES.</p>
-        <p>Some jurisdictions do not allow certain limitations; in those cases, the limitations apply to the fullest extent permitted.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">9. Intellectual property</h2>
+              <p>The Services, including our website, branding, software, and documentation (excluding Your Content and third-party materials), are owned by Pilaris or its licensors and are protected by applicable intellectual property laws. Except as expressly permitted, you may not copy, modify, distribute, sell, or reverse engineer any part of the Services.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">12. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless Pilaris and its operators from and against claims, damages, losses, and expenses (including reasonable legal fees) arising out of or related to your use of the Services, Your Content, your servers, or your violation of these Terms, the Acceptable Use Policy, or applicable law.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">10. Disclaimers</h2>
+              <p class="uppercase tracking-wide text-gray-400">To the maximum extent permitted by law, the Services are provided "as is" and "as available" without warranties of any kind, whether express, implied, or statutory, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. We do not warrant that the Services will be uninterrupted, secure, or error-free, or that data will be preserved.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">13. Changes to these Terms</h2>
-        <p>We may update these Terms from time to time. If we make material changes, we will update the "Last updated" date and, where appropriate, provide notice through the Services. Your continued use of the Services after changes become effective constitutes acceptance of the updated Terms.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">11. Limitation of liability</h2>
+              <p class="uppercase tracking-wide text-gray-400">To the maximum extent permitted by law, Pilaris and its operators, affiliates, and service providers will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenue, data, goodwill, or service availability, arising out of or related to your use of (or inability to use) the Services, even if advised of the possibility of such damages. To the maximum extent permitted by law, our total liability for any claim arising out of or relating to the Services will not exceed the greater of (a) the amount you paid to us for the Services in the twelve (12) months before the claim or (b) USD $0, reflecting the free nature of the Services.</p>
+              <p>Some jurisdictions do not allow certain limitations; in those cases, the limitations apply to the fullest extent permitted.</p>
+            </section>
 
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold text-white">14. Contact</h2>
-        <p>If you have questions about these Terms, please contact us through the official Pilaris support or community channels listed on our website.</p>
-      </section>
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">12. Indemnification</h2>
+              <p>You agree to indemnify and hold harmless Pilaris and its operators from and against claims, damages, losses, and expenses (including reasonable legal fees) arising out of or related to your use of the Services, Your Content, your servers, or your violation of these Terms, the Acceptable Use Policy, or applicable law.</p>
+            </section>
+
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">13. Changes to these Terms</h2>
+              <p>We may update these Terms from time to time. If we make material changes, we will update the "Last updated" date and, where appropriate, provide notice through the Services. Your continued use of the Services after changes become effective constitutes acceptance of the updated Terms.</p>
+            </section>
+
+            <section class="space-y-3 border-t border-white/10 pt-8">
+              <h2 class="text-xl font-semibold tracking-tight text-white">14. Contact</h2>
+              <p>If you have questions about these Terms, please contact us through the official Pilaris support or community channels listed on our website.</p>
+            </section>
+          </div>
+        </div>
+      </article>
     </div>
   </main>
 
-  <footer class="border-t border-white/5">
-    <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-8 text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between">
-      <p>&copy; 2026 Pilaris. All rights reserved. Not affiliated with any of the games mentioned.</p>
-      <div class="flex gap-4">
-        <a href="../privacy/" class="hover:text-white">Privacy</a>
-        <a href="../terms/" class="hover:text-white">Terms</a>
-        <a href="../acceptable-use/" class="hover:text-white">Acceptable Use</a>
+  <footer class="border-t border-white/5 bg-obsidian">
+    <div class="mx-auto max-w-7xl px-6 py-10">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <img src="../assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto opacity-90" />
+          <p class="mt-3 text-xs text-gray-400">&copy; 2026 Pilaris. All rights reserved. Not affiliated with any of the games mentioned.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-400">
+          <a href="../privacy/" class="transition hover:text-white">Privacy</a>
+          <a href="../terms/" class="text-white">Terms</a>
+          <a href="../acceptable-use/" class="transition hover:text-white">Acceptable Use</a>
+          <a href="../" class="transition hover:text-white">Home</a>
+        </div>
       </div>
     </div>
   </footer>
