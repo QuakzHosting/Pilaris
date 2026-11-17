@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pilaris | Game server hosting at the edge</title>
-  <meta name="description" content="Deploy ultra-low latency, DDoS-protected game servers in 12 seconds. Bare-metal Ryzen 9 nodes, NVMe Gen5 storage and real-time telemetry for Minecraft, Rust, Palworld and Valheim." />
+  <title>Pilaris | Dedicated Game Server Hosting</title>
+  <meta name="description" content="Deploy high-tick, DDoS-protected game servers for Minecraft, Rust, Palworld, Valheim, Counter-Strike 2, and ARK: Survival Ascended. Manage worlds, plugins, files, and backups from one control panel." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pilaris | Game server hosting at the edge" />
-  <meta property="og:description" content="Turn complex game worlds into effortless communities. Deploy in 12 seconds, backed by real-time telemetry and automated modpack scaling." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:title" content="Pilaris | Dedicated Game Server Hosting" />
+  <meta property="og:description" content="High-clock Ryzen 9 game servers with 1-click modpacks, web file management, world backups, and game-aware DDoS protection." />
+  <meta property="og:image" content="assets/pilaris-dashboard-all/shots/dashboard.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080A'/%3E%3Cpath d='M10 25V9.5l4.5-1.5V25H10Z' fill='%23fff'/%3E%3Cpath d='M18 25V5l4.5-1.5V25H18Z' fill='%23fff'/%3E%3C/svg%3E" />
 
@@ -57,12 +57,12 @@
   <!-- ============ HERO ============ -->
   <div id="top" class="relative isolate overflow-hidden">
     <!-- Atmospheric backdrop -->
-    <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[1500px] md:h-[1250px]" aria-hidden="true">
+    <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[1250px]" aria-hidden="true">
       <div class="absolute inset-0 bg-gradient-to-b from-[#182030] via-[#2E2633] to-[#07080A]"></div>
-      <div class="absolute inset-x-0 bottom-0 top-[24%] bg-cover bg-center opacity-70"
+      <div class="absolute inset-x-0 bottom-0 top-[20%] bg-cover bg-center opacity-50"
            style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2400&q=80'); -webkit-mask-image:linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 30%, black 55%, rgba(0,0,0,0.6) 82%, transparent 100%); mask-image:linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 30%, black 55%, rgba(0,0,0,0.6) 82%, transparent 100%);"></div>
-      <div class="absolute inset-x-0 bottom-0 top-[24%] bg-gradient-to-b from-[#182030]/55 via-[#2E2633]/30 to-[#07080A]/95"></div>
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#07080A] via-[#07080A]/70 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 top-[20%] bg-gradient-to-b from-[#182030]/60 via-[#2E2633]/35 to-[#07080A]/95"></div>
+      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#07080A] via-[#07080A]/80 to-transparent"></div>
     </div>
 
     <!-- Floating navbar -->
@@ -73,17 +73,18 @@
         </a>
 
         <nav class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-2 backdrop-blur-md lg:flex" aria-label="Primary">
-          <a href="#servers" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Servers</a>
-          <a href="#network" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Global network</a>
-          <a href="#panel" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Control panel</a>
-          <a href="#credits" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Earn credits</a>
-          <a href="#docs" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Docs</a>
+          <a href="#games" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Games</a>
+          <a href="#panel" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Control Panel</a>
+          <a href="#plc-economy" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Free Tier &amp; PLC</a>
+          <a href="#features" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Server Tools</a>
+          <a href="https://console.pilaris.pro/docs" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Docs</a>
+          <a href="https://status.pilaris.pro/" class="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-gray-300 transition hover:bg-white/5 hover:text-white">Status</a>
         </nav>
 
         <div class="flex items-center gap-3">
           <div class="hidden items-center gap-5 md:flex">
-            <a href="#" class="text-[13px] font-medium text-gray-300 transition hover:text-white">Client login</a>
-            <a href="https://console.pilaris.pro" class="rounded-full bg-white px-5 py-2 text-[13px] font-semibold text-obsidian transition hover:bg-gray-200">Get started</a>
+            <a href="https://console.pilaris.pro" class="text-[13px] font-medium text-gray-300 transition hover:text-white">Console login</a>
+            <a href="https://console.pilaris.pro" class="rounded-full bg-white px-5 py-2 text-[13px] font-semibold text-obsidian transition hover:bg-gray-200">Deploy server</a>
           </div>
 
           <button id="menuBtn" type="button" class="relative grid size-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -95,22 +96,23 @@
 
       <div id="mobileMenu" class="mx-4 hidden rounded-2xl border border-white/10 bg-obsidian/95 p-4 backdrop-blur-xl lg:hidden">
         <nav class="flex flex-col" aria-label="Mobile">
-          <a href="#servers" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Servers</a>
-          <a href="#network" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Global network</a>
-          <a href="#panel" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Control panel</a>
-          <a href="#credits" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Earn credits</a>
-          <a href="#docs" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Docs</a>
+          <a href="#games" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Games</a>
+          <a href="#panel" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Control Panel</a>
+          <a href="#plc-economy" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Free Tier &amp; PLC</a>
+          <a href="#features" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Server Tools</a>
+          <a href="https://console.pilaris.pro/docs" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Docs</a>
+          <a href="https://status.pilaris.pro/" class="rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:bg-white/5 hover:text-white">Status</a>
         </nav>
         <div class="mt-3 grid grid-cols-2 gap-2 border-t border-white/10 pt-3">
-          <a href="#" class="rounded-full border border-white/15 px-4 py-2.5 text-center text-sm font-medium text-white">Client login</a>
-          <a href="https://console.pilaris.pro" class="rounded-full bg-white px-4 py-2.5 text-center text-sm font-semibold text-obsidian">Get started</a>
+          <a href="https://console.pilaris.pro" class="rounded-full border border-white/15 px-4 py-2.5 text-center text-sm font-medium text-white">Console login</a>
+          <a href="https://console.pilaris.pro" class="rounded-full bg-white px-4 py-2.5 text-center text-sm font-semibold text-obsidian">Deploy server</a>
         </div>
       </div>
     </header>
 
-    <!-- Hero copy -->
+    <!-- Hero copy + real dashboard showcase -->
     <main id="main" class="relative z-10">
-      <section class="px-6 pt-8 sm:pt-14">
+      <section class="px-6 pt-10 sm:pt-16">
         <div class="mx-auto max-w-7xl">
           <div class="flex justify-center">
             <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 backdrop-blur-md">
@@ -118,726 +120,750 @@
                 <span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
                 <span class="relative inline-flex size-1.5 rounded-full bg-emerald-400"></span>
               </span>
-              <span class="text-[11px] font-medium text-gray-300">Bare-metal Ryzen 9 9950X nodes now live</span>
+              <span class="text-xs font-medium text-gray-300">Free 2 GB RAM · 3 GB Disk · 120% CPU Starter Server</span>
             </div>
           </div>
 
-          <h1 class="mx-auto mt-7 max-w-4xl text-balance text-center font-serif text-5xl leading-[1.08] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl">
-            Turn complex game worlds into effortless communities.
+          <h1 class="mx-auto mt-7 max-w-4xl text-balance text-center font-serif text-5xl leading-[1.06] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl">
+            Game servers built for high tick rates, modpacks, and zero lag spikes.
           </h1>
 
-          <p class="mx-auto mt-5 max-w-xl text-pretty text-center text-base leading-relaxed text-gray-400 sm:text-lg">
-            Deploy ultra-low latency, DDoS-protected game servers in 12 seconds. Real-time telemetry and automated modpack scaling come standard.
+          <p class="mx-auto mt-5 max-w-2xl text-pretty text-center text-base leading-relaxed text-gray-300 sm:text-lg">
+            Launch dedicated worlds for Minecraft, Rust, Palworld, Valheim, CS2, and ARK: Survival Ascended. Manage files, plugins, worlds, and automated backups from one purpose-built console.
           </p>
 
-          <div class="mt-8 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <a href="#credits" class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-obsidian shadow-lg transition hover:bg-gray-200 active:scale-[0.98]">
-              Earn free credits
+          <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a href="https://console.pilaris.pro" class="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-obsidian shadow-lg transition hover:bg-gray-200 active:scale-[0.98]">
+              Deploy a game server
               <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
             </a>
-            <div class="flex items-center gap-3">
-              <div class="flex items-center gap-0.5" aria-hidden="true">
-                <i data-lucide="star" class="size-3.5 fill-amber-400 text-amber-400"></i>
-                <i data-lucide="star" class="size-3.5 fill-amber-400 text-amber-400"></i>
-                <i data-lucide="star" class="size-3.5 fill-amber-400 text-amber-400"></i>
-                <i data-lucide="star" class="size-3.5 fill-amber-400 text-amber-400"></i>
-                <i data-lucide="star" class="size-3.5 fill-amber-400 text-amber-400"></i>
-              </div>
-              <span class="text-sm font-semibold text-white">4.9</span>
-              <span class="text-xs text-gray-400">from 1,400+ server owners</span>
-            </div>
-          </div>
-
-          <!-- ============ DASHBOARD MOCKUP ============ -->
-          <div id="panel" class="relative mx-auto mt-14 max-w-5xl px-4 sm:px-6">
-            <div class="relative overflow-hidden rounded-2xl border border-white/15 bg-[#FAFAFA] text-gray-900 shadow-2xl">
-              <div class="flex min-h-[540px] items-stretch">
-
-                <!-- Mockup sidebar -->
-                <aside class="hidden w-52 shrink-0 flex-col bg-[#111318] p-4 md:flex">
-                  <div class="flex items-center gap-2 px-1">
-                    <img src="assets/pilaris-wordmark.png" alt="" class="h-4 w-auto" />
-                    <span class="ml-auto rounded bg-white/10 px-1.5 py-0.5 font-mono text-[9px] text-gray-300">v3.2</span>
-                  </div>
-
-                  <div class="mt-5 flex items-center gap-2 rounded-md bg-white/5 px-2.5 py-2">
-                    <i data-lucide="search" class="size-3.5 text-gray-400" aria-hidden="true"></i>
-                    <span class="text-[11px] text-gray-400">Search servers</span>
-                    <span class="ml-auto rounded border border-white/10 px-1 py-0.5 font-mono text-[9px] text-gray-400">Ctrl K</span>
-                  </div>
-
-                  <nav class="mt-5 space-y-0.5">
-                    <a href="#" class="flex items-center gap-2.5 rounded-md bg-white/10 px-2.5 py-1.5 text-[11px] font-medium text-white">
-                      <i data-lucide="layout-dashboard" class="size-3.5" aria-hidden="true"></i>Overview
-                    </a>
-                    <a href="#" class="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[11px] text-gray-400">
-                      <i data-lucide="terminal" class="size-3.5" aria-hidden="true"></i>Live console
-                    </a>
-                    <a href="#" class="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[11px] text-gray-400">
-                      <i data-lucide="box" class="size-3.5" aria-hidden="true"></i>Modpack node
-                    </a>
-                    <a href="#" class="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[11px] text-gray-400">
-                      <i data-lucide="database" class="size-3.5" aria-hidden="true"></i>Backups
-                    </a>
-                    <a href="#" class="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[11px] text-gray-400">
-                      <i data-lucide="activity" class="size-3.5" aria-hidden="true"></i>Player telemetry
-                    </a>
-                    <a href="#" class="flex items-center gap-2.5 rounded-md px-2.5 py-1.5 text-[11px] text-gray-400">
-                      <i data-lucide="shield" class="size-3.5" aria-hidden="true"></i>DDoS firewall
-                    </a>
-                  </nav>
-
-                  <p class="mt-6 px-2 text-[9px] font-medium uppercase tracking-[0.14em] text-gray-400">Servers</p>
-                  <ul class="mt-2 space-y-0.5">
-                    <li>
-                      <a href="#" class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[11px] text-gray-300 hover:bg-white/5">
-                        <span class="size-1.5 shrink-0 rounded-full bg-emerald-400"></span>
-                        <span class="truncate">Minecraft SMP</span>
-                        <span class="ml-auto font-mono text-[9px] text-gray-400">14ms</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[11px] text-gray-300 hover:bg-white/5">
-                        <span class="size-1.5 shrink-0 rounded-full bg-emerald-400"></span>
-                        <span class="truncate">Rust Main</span>
-                        <span class="ml-auto font-mono text-[9px] text-gray-400">11ms</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="flex items-center gap-2 rounded-md px-2 py-1.5 text-[11px] text-gray-300 hover:bg-white/5">
-                        <span class="size-1.5 shrink-0 rounded-full bg-amber-400"></span>
-                        <span class="truncate">Valheim Guild</span>
-                        <span class="ml-auto font-mono text-[9px] text-gray-400">idle</span>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <div class="mt-auto flex items-center gap-2 rounded-lg bg-white/5 p-2">
-                    <div class="grid size-7 shrink-0 place-items-center rounded-full bg-emerald-500/15 text-[10px] font-semibold text-emerald-400">AV</div>
-                    <div class="min-w-0">
-                      <p class="truncate text-[11px] font-medium text-white">Ari Voss</p>
-                      <p class="truncate text-[9px] text-gray-400">Owner</p>
-                    </div>
-                  </div>
-                </aside>
-
-                <!-- Mockup main canvas -->
-                <div class="flex min-w-0 flex-1 flex-col bg-white p-5 pb-12 sm:p-6 sm:pb-24">
-                  <div class="flex flex-wrap items-center justify-between gap-2">
-                    <p class="font-mono text-[10px] text-gray-500">Servers / Survival-World-01 / Automation flow</p>
-                    <div class="flex items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-2 py-1">
-                      <span class="size-1.5 rounded-full bg-emerald-500"></span>
-                      <span class="font-mono text-[10px] text-gray-600">Online &middot; 14ms &middot; 64/100</span>
-                    </div>
-                  </div>
-
-                  <div class="mt-4 flex items-end justify-between gap-3">
-                    <div>
-                      <p class="text-sm font-semibold text-gray-900">Automation flow</p>
-                      <p class="mt-0.5 text-[11px] text-gray-500">Three steps, evaluated every 30 seconds</p>
-                    </div>
-                    <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Active</span>
-                  </div>
-
-                  <!-- Node canvas -->
-                  <div class="mt-4 flex flex-1 items-center rounded-xl border border-gray-200 bg-[#FCFCFD] p-4"
-                       style="background-image:radial-gradient(#E6E8EB 1px, transparent 1px); background-size:16px 16px;">
-                    <div class="flex w-full flex-col items-stretch gap-2 md:flex-row md:items-center md:gap-0">
-
-                      <div class="w-full rounded-lg border border-gray-200 bg-white p-3 shadow-sm md:min-w-0 md:flex-1">
-                        <div class="flex items-center gap-2">
-                          <span class="grid size-6 place-items-center rounded-md bg-amber-50 text-amber-600">
-                            <i data-lucide="zap" class="size-3.5" aria-hidden="true"></i>
-                          </span>
-                          <span class="text-[9px] font-semibold uppercase tracking-[0.12em] text-gray-500">Trigger</span>
-                        </div>
-                        <p class="mt-2 text-[11px] font-semibold leading-snug text-gray-900">Player spike &gt; 80%</p>
-                        <p class="mt-0.5 text-[10px] leading-snug text-gray-500">Sustained for 90 seconds</p>
-                        <p class="mt-2 truncate font-mono text-[9px] text-gray-500">metric.players.util</p>
-                      </div>
-
-                      <svg class="mx-auto h-4 w-6 shrink-0 rotate-90 text-gray-300 md:mx-1 md:rotate-0" viewBox="0 0 24 16" fill="none" aria-hidden="true">
-                        <path d="M1 8h19" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3" />
-                        <path d="M17 5l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-
-                      <div class="w-full rounded-lg border border-gray-200 bg-white p-3 shadow-sm md:min-w-0 md:flex-1">
-                        <div class="flex items-center gap-2">
-                          <span class="grid size-6 place-items-center rounded-md bg-emerald-50 text-emerald-600">
-                            <i data-lucide="cpu" class="size-3.5" aria-hidden="true"></i>
-                          </span>
-                          <span class="text-[9px] font-semibold uppercase tracking-[0.12em] text-gray-500">Action</span>
-                        </div>
-                        <p class="mt-2 text-[11px] font-semibold leading-snug text-gray-900">Auto-scale RAM to 32 GB</p>
-                        <p class="mt-0.5 text-[10px] leading-snug text-gray-500">NVMe Gen5 pool, no restart</p>
-                        <p class="mt-2 truncate font-mono text-[9px] text-gray-500">action.scale.ram</p>
-                      </div>
-
-                      <svg class="mx-auto h-4 w-6 shrink-0 rotate-90 text-gray-300 md:mx-1 md:rotate-0" viewBox="0 0 24 16" fill="none" aria-hidden="true">
-                        <path d="M1 8h19" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3" />
-                        <path d="M17 5l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-
-                      <div class="w-full rounded-lg border border-gray-200 bg-white p-3 shadow-sm md:min-w-0 md:flex-1">
-                        <div class="flex items-center gap-2">
-                          <span class="grid size-6 place-items-center rounded-md bg-emerald-50 text-emerald-600">
-                            <i data-lucide="database" class="size-3.5" aria-hidden="true"></i>
-                          </span>
-                          <span class="text-[9px] font-semibold uppercase tracking-[0.12em] text-gray-500">Action</span>
-                        </div>
-                        <p class="mt-2 text-[11px] font-semibold leading-snug text-gray-900">Snapshot world to S3</p>
-                        <p class="mt-0.5 text-[10px] leading-snug text-gray-500">Notify #ops in Discord</p>
-                        <p class="mt-2 truncate font-mono text-[9px] text-gray-500">action.snapshot.s3</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mt-4 flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-                    <i data-lucide="check" class="size-3.5 text-emerald-600" aria-hidden="true"></i>
-                    <p class="font-mono text-[10px] text-gray-500">Last run 12s ago &middot; 0 failures &middot; 41 ms</p>
-                  </div>
-                </div>
-
-                <!-- Mockup inspector -->
-                <aside class="hidden w-60 shrink-0 flex-col border-l border-gray-200 p-4 pb-20 lg:flex">
-                  <div class="flex items-center gap-1.5">
-                    <span class="size-1.5 rounded-full bg-emerald-500"></span>
-                    <p class="text-[9px] font-semibold uppercase tracking-[0.14em] text-gray-500">Live telemetry</p>
-                  </div>
-
-                  <div class="mt-4">
-                    <div class="flex items-baseline justify-between">
-                      <span class="text-[11px] text-gray-500">Tickrate</span>
-                      <span class="font-mono text-[11px] font-medium text-gray-900">20.0 TPS</span>
-                    </div>
-                    <div class="mt-1.5 flex h-8 items-end gap-0.5">
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:62%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:74%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:58%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:81%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:69%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:88%"></span>
-                      <span class="flex-1 rounded-sm bg-gray-200" style="height:72%"></span>
-                      <span class="flex-1 rounded-sm bg-emerald-500" style="height:96%"></span>
-                      <span class="flex-1 rounded-sm bg-emerald-500" style="height:92%"></span>
-                      <span class="flex-1 rounded-sm bg-emerald-500" style="height:100%"></span>
-                      <span class="flex-1 rounded-sm bg-emerald-500" style="height:94%"></span>
-                      <span class="flex-1 rounded-sm bg-emerald-500" style="height:98%"></span>
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <div class="flex items-baseline justify-between">
-                      <span class="text-[11px] text-gray-500">CPU</span>
-                      <span class="font-mono text-[11px] font-medium text-gray-900">42%</span>
-                    </div>
-                    <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-gray-100">
-                      <div class="h-full w-[42%] rounded-full bg-gray-900"></div>
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <div class="flex items-baseline justify-between">
-                      <span class="text-[11px] text-gray-500">Memory</span>
-                      <span class="font-mono text-[11px] font-medium text-gray-900">18.4 / 32 GB</span>
-                    </div>
-                    <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-gray-100">
-                      <div class="h-full w-[57%] rounded-full bg-gray-900"></div>
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <div class="flex items-baseline justify-between">
-                      <span class="text-[11px] text-gray-500">Players</span>
-                      <span class="font-mono text-[11px] font-medium text-gray-900">64 / 100</span>
-                    </div>
-                    <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-gray-100">
-                      <div class="h-full w-[64%] rounded-full bg-emerald-500"></div>
-                    </div>
-                  </div>
-
-                  <div class="mt-4 rounded-lg border border-gray-200 bg-gray-50 p-2.5">
-                    <p class="font-mono text-[9px] leading-relaxed text-gray-500">[12:04:31] autoscale.ram<br />[12:04:31] snapshot.queued<br />[12:04:32] discord.notified</p>
-                  </div>
-
-                  <button type="button" class="mt-auto inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-[#111318] px-4 py-2 text-[11px] font-medium text-white">
-                    <i data-lucide="play" class="size-3" aria-hidden="true"></i>
-                    Publish config
-                  </button>
-                </aside>
-              </div>
-            </div>
-
-            <!-- Horizon blend over the mockup base -->
-            <div class="pointer-events-none absolute inset-x-4 bottom-0 h-10 rounded-b-2xl bg-gradient-to-t from-[#07080A] via-[#07080A]/75 to-transparent sm:inset-x-6 sm:h-20" aria-hidden="true"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ TRUST BAR ============ -->
-      <section class="mx-auto max-w-7xl px-6 py-12">
-        <div class="flex flex-col items-start justify-between gap-8 border-b border-white/5 pb-12 md:flex-row md:items-center">
-          <p class="max-w-[200px] text-xs leading-relaxed text-gray-400">Powering low-latency infrastructure across leading titles</p>
-          <div class="flex flex-wrap items-center gap-x-8 gap-y-5">
-            <img src="assets/games/minecraft.png" alt="Minecraft" width="763" height="131" class="h-6 w-auto opacity-70 transition hover:opacity-100" />
-            <img src="assets/games/rust.png" alt="Rust" width="618" height="150" class="h-6 w-auto opacity-70 transition hover:opacity-100" />
-            <img src="assets/games/palworld.png" alt="Palworld" width="596" height="164" class="h-6 w-auto opacity-70 transition hover:opacity-100" />
-            <img src="assets/games/valheim.png" alt="Valheim" width="632" height="202" class="h-6 w-auto opacity-70 transition hover:opacity-100" />
-            <img src="assets/games/counter-strike-2.png" alt="Counter-Strike 2" width="639" height="132" class="h-5 w-auto invert opacity-70 transition hover:opacity-100" />
-            <img src="assets/games/ark-ascended.png" alt="ARK: Survival Ascended" width="633" height="354" class="h-9 w-auto opacity-70 transition hover:opacity-100" />
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ WHY PILARIS ============ -->
-      <section id="servers" class="mx-auto max-w-7xl px-6 py-16 sm:py-24">
-        <div class="flex justify-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1 text-[11px] font-semibold text-obsidian">
-            <i data-lucide="layers" class="size-3" aria-hidden="true"></i>
-            Why Pilaris
-          </span>
-        </div>
-        <h2 class="mx-auto mt-5 max-w-2xl text-balance text-center font-serif text-4xl leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl md:text-6xl">
-          As player counts grow, most hosts begin to lag.
-        </h2>
-
-        <div class="mt-14 grid items-center gap-10 rounded-3xl border border-white/10 bg-surface p-6 sm:p-8 md:gap-12 md:p-12 lg:grid-cols-12">
-          <!-- Floating product card -->
-          <div class="relative order-2 lg:order-1 lg:col-span-7">
-            <div class="relative rounded-2xl bg-[#FAFAFA] p-5 text-gray-900 shadow-2xl">
-              <div class="flex items-center justify-between gap-3">
-                <div class="flex items-center gap-2.5">
-                  <span class="grid size-8 place-items-center rounded-lg bg-gray-900 text-white">
-                    <i data-lucide="activity" class="size-4" aria-hidden="true"></i>
-                  </span>
-                  <div>
-                    <p class="text-[12px] font-semibold text-gray-900">Survival-World-01</p>
-                    <p class="font-mono text-[9px] text-gray-500">Fabric 0.15.7 &middot; 42 mods</p>
-                  </div>
-                </div>
-                <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-medium text-emerald-700">Stable</span>
-              </div>
-
-              <div class="mt-6 flex items-end justify-between gap-4">
-                <div>
-                  <p class="text-[9px] font-semibold uppercase tracking-[0.14em] text-gray-500">Tickrate</p>
-                  <p class="mt-1 font-mono text-3xl font-medium tracking-tight text-gray-900">20.0 <span class="text-sm font-normal text-gray-500">TPS</span></p>
-                </div>
-                <div class="flex h-12 items-end gap-1">
-                  <span class="w-2 rounded-sm bg-gray-200" style="height:48%"></span>
-                  <span class="w-2 rounded-sm bg-gray-200" style="height:66%"></span>
-                  <span class="w-2 rounded-sm bg-gray-200" style="height:54%"></span>
-                  <span class="w-2 rounded-sm bg-gray-200" style="height:78%"></span>
-                  <span class="w-2 rounded-sm bg-gray-200" style="height:62%"></span>
-                  <span class="w-2 rounded-sm bg-gray-300" style="height:84%"></span>
-                  <span class="w-2 rounded-sm bg-emerald-500" style="height:94%"></span>
-                  <span class="w-2 rounded-sm bg-emerald-500" style="height:100%"></span>
-                  <span class="w-2 rounded-sm bg-emerald-500" style="height:96%"></span>
-                </div>
-              </div>
-
-              <div class="mt-5 grid grid-cols-3 gap-2">
-                <div class="rounded-lg border border-gray-200 bg-white p-2.5">
-                  <p class="text-[9px] uppercase tracking-[0.1em] text-gray-500">Players</p>
-                  <p class="mt-1 font-mono text-sm font-medium text-gray-900">64</p>
-                </div>
-                <div class="rounded-lg border border-gray-200 bg-white p-2.5">
-                  <p class="text-[9px] uppercase tracking-[0.1em] text-gray-500">Memory</p>
-                  <p class="mt-1 font-mono text-sm font-medium text-gray-900">18.4<span class="text-[10px] text-gray-500">/32</span></p>
-                </div>
-                <div class="rounded-lg border border-gray-200 bg-white p-2.5">
-                  <p class="text-[9px] uppercase tracking-[0.1em] text-gray-500">Uptime</p>
-                  <p class="mt-1 font-mono text-sm font-medium text-gray-900">99.99<span class="text-[10px] text-gray-500">%</span></p>
-                </div>
-              </div>
-
-              <div class="mt-4 rounded-lg border border-gray-200 bg-white p-3">
-                <div class="flex items-center gap-2">
-                  <div class="flex -space-x-2">
-                    <span class="grid size-7 place-items-center rounded-full border-2 border-white bg-emerald-100 text-[9px] font-semibold text-emerald-700">MK</span>
-                    <span class="grid size-7 place-items-center rounded-full border-2 border-white bg-gray-100 text-[9px] font-semibold text-gray-600">JT</span>
-                    <span class="grid size-7 place-items-center rounded-full border-2 border-white bg-amber-100 text-[9px] font-semibold text-amber-700">RL</span>
-                    <span class="grid size-7 place-items-center rounded-full border-2 border-white bg-gray-900 text-[9px] font-semibold text-white">+61</span>
-                  </div>
-                  <p class="text-[10px] text-gray-500">players synced this session</p>
-                </div>
-
-                <div class="mt-3 space-y-1.5">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="size-3 text-emerald-600" aria-hidden="true"></i>
-                    <p class="text-[10px] text-gray-600">Modpack sync completed in 2.4s</p>
-                    <span class="ml-auto font-mono text-[9px] text-gray-500">42/42</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="refresh-cw" class="size-3 text-gray-500" aria-hidden="true"></i>
-                    <p class="text-[10px] text-gray-600">Crash recovery armed, cold start 8.7s</p>
-                    <span class="ml-auto rounded-full bg-gray-100 px-1.5 py-0.5 text-[9px] font-medium text-gray-600">On</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="shield" class="size-3 text-gray-500" aria-hidden="true"></i>
-                    <p class="text-[10px] text-gray-600">CosmicGuard filtering at 17 Tbps</p>
-                    <span class="ml-auto font-mono text-[9px] text-gray-500">0 hits</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="absolute -top-4 right-4 inline-flex items-center gap-1.5 rounded-full bg-[#111318] px-3 py-1.5 text-[10px] font-medium text-white shadow-xl sm:right-8">
-              <span class="size-1.5 rounded-full bg-emerald-400"></span>
-              20.0 TPS locked
-            </div>
-          </div>
-
-          <!-- Copy -->
-          <div class="order-1 lg:order-2 lg:col-span-5">
-            <div class="flex items-start gap-3">
-              <span class="mt-1 grid size-9 shrink-0 place-items-center rounded-lg bg-emerald-500/10 text-emerald-400">
-                <i data-lucide="gauge" class="size-4" aria-hidden="true"></i>
-              </span>
-              <h3 class="font-serif text-2xl leading-tight tracking-[-0.02em] text-white sm:text-3xl">
-                Built for communities that refuse rubber-banding
-              </h3>
-            </div>
-
-            <p class="mt-4 text-pretty text-sm leading-relaxed text-gray-400">
-              Every node runs on Ryzen 9 9950X silicon with DDR5 ECC memory and NVMe Gen5 storage, so world saves and modpack syncs finish before your players notice. CosmicGuard absorbs 17 Tbps of attack traffic at the edge.
-            </p>
-
-            <ul class="mt-5 space-y-2.5">
-              <li class="flex items-start gap-2.5 text-sm text-gray-300">
-                <i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                20.0 TPS lock under 200-player load
-              </li>
-              <li class="flex items-start gap-2.5 text-sm text-gray-300">
-                <i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                Gen5 NVMe with three redundant snapshots
-              </li>
-              <li class="flex items-start gap-2.5 text-sm text-gray-300">
-                <i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                Crash recovery restarts in under 9 seconds
-              </li>
-            </ul>
-
-            <a href="#servers" class="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-obsidian transition hover:bg-gray-200">
-              View hardware specs
-              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ BENTO / TELEMETRY ============ -->
-      <section id="network" class="mx-auto max-w-7xl px-6 pb-16 sm:pb-24">
-        <div class="grid gap-6 md:grid-cols-12">
-          <!-- Card 1 -->
-          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-8 md:col-span-5">
-            <div>
-              <h2 class="max-w-sm text-balance font-serif text-3xl leading-[1.1] tracking-[-0.03em] text-white sm:text-4xl">
-                A clear view of server performance in real time.
-              </h2>
-              <p class="mt-4 max-w-sm text-pretty text-sm leading-relaxed text-gray-400">
-                Tickrate, memory pressure, player sessions and packet loss stream from every node into one panel. No agents to install, no dashboards to wire up.
-              </p>
-            </div>
-
-            <ul class="mt-10 space-y-3 border-t border-white/5 pt-6">
-              <li class="flex items-center gap-3">
-                <span class="size-1.5 rounded-full bg-emerald-400"></span>
-                <span class="text-[13px] text-gray-400">Tickrate</span>
-                <span class="ml-auto font-mono text-[13px] tabular-nums text-gray-200">20.0 TPS</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="size-1.5 rounded-full bg-emerald-400"></span>
-                <span class="text-[13px] text-gray-400">Memory pressure</span>
-                <span class="ml-auto font-mono text-[13px] tabular-nums text-gray-200">57%</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="size-1.5 rounded-full bg-emerald-400"></span>
-                <span class="text-[13px] text-gray-400">Player sessions</span>
-                <span class="ml-auto font-mono text-[13px] tabular-nums text-gray-200">64 live</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="rounded-2xl border border-white/10 bg-surface p-8 md:col-span-7">
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <p class="text-sm font-medium text-gray-200">Global edge telemetry</p>
-                <p class="mt-0.5 text-xs text-gray-400">May to August, all regions</p>
-              </div>
-              <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[10px] font-medium text-emerald-400">
-                <span class="size-1.5 rounded-full bg-emerald-400"></span>
-                Live
-              </span>
-            </div>
-
-            <div class="mt-7 grid grid-cols-2 gap-6">
-              <div>
-                <p class="font-serif text-4xl leading-none tracking-[-0.02em] text-white tabular-nums">99.99<span class="text-xl text-gray-400">%</span></p>
-                <p class="mt-2 text-xs text-gray-400">Uptime SLA, measured</p>
-              </div>
-              <div>
-                <p class="font-serif text-4xl leading-none tracking-[-0.02em] text-white tabular-nums">11.4<span class="text-xl text-gray-400"> ms</span></p>
-                <p class="mt-2 text-xs text-gray-400">Average global ping</p>
-              </div>
-            </div>
-
-            <div class="relative mt-12">
-              <div class="absolute -top-7 right-0 inline-flex items-center gap-1.5 rounded-lg bg-white px-2.5 py-1 text-[10px] font-semibold text-obsidian shadow-lg">
-                <span class="size-1 rounded-full bg-emerald-500"></span>
-                99.98% stable
-              </div>
-
-              <div class="flex h-28 items-end gap-3 sm:gap-5">
-                <div class="w-full rounded-t bg-white/10" style="height:62%"></div>
-                <div class="w-full rounded-t bg-white/15" style="height:74%"></div>
-                <div class="w-full rounded-t bg-white/10" style="height:68%"></div>
-                <div class="w-full rounded-t bg-white/80" style="height:92%"></div>
-              </div>
-
-              <div class="mt-3 grid grid-cols-4 gap-3 border-t border-white/5 pt-3 text-center text-[10px] text-gray-400 sm:gap-5">
-                <span>May</span>
-                <span>Jun</span>
-                <span>Jul</span>
-                <span>Aug</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============ EARN CREDITS ============ -->
-      <section id="credits" class="mx-auto max-w-7xl px-6 pb-20 sm:pb-28">
-        <div class="mx-auto max-w-2xl text-center">
-          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-3.5 py-1.5 text-[11px] font-medium text-emerald-300">
-            <i data-lucide="wallet" class="size-3.5" aria-hidden="true"></i>
-            No card. No subscription.
-          </span>
-          <h2 class="mt-5 text-balance font-serif text-4xl leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl md:text-6xl">
-            Earn credits with offerwalls. Pay for your servers with them.
-          </h2>
-          <p class="mx-auto mt-4 max-w-xl text-pretty text-sm leading-relaxed text-gray-400 sm:text-base">
-            There are no paid plans right now. Complete offers on <span class="font-medium text-white">Bitcotasks</span> and other trusted offerwalls, collect credits in your Pilaris wallet, and spend them on any node you deploy.
-          </p>
-        </div>
-
-        <div class="mt-12 grid items-stretch gap-6 lg:grid-cols-3">
-          <!-- Bitcotasks -->
-          <article class="relative flex flex-col rounded-2xl border border-white/20 bg-[#12151B] p-6 sm:p-7">
-            <div class="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" aria-hidden="true"></div>
-            <div class="flex items-center justify-between gap-3">
-              <span class="font-mono text-[11px] text-gray-400">01 / Earn</span>
-              <span class="rounded-full bg-white px-2.5 py-1 text-[10px] font-semibold text-obsidian">Recommended</span>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Bitcotasks offerwall</h3>
-            <p class="mt-2 text-pretty text-sm leading-relaxed text-gray-400">
-              Surveys, signups, app installs and quick tasks. Finish a few offers and the credits show up in your Pilaris wallet, ready to spend.
-            </p>
-            <ul class="mt-6 space-y-3 border-t border-white/10 pt-6 text-[13px] text-gray-300">
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                Credits land in your Pilaris wallet
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                Works on desktop and mobile
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-emerald-400" aria-hidden="true"></i>
-                Top up as often as you want
-              </li>
-            </ul>
-            <a href="https://bitcotasks.com" target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-obsidian transition hover:bg-gray-200 active:scale-[0.98]">
-              Start earning on Bitcotasks
-              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
-            </a>
-          </article>
-
-          <!-- More offerwalls -->
-          <article class="flex flex-col rounded-2xl border border-white/10 bg-surface p-6 sm:p-7">
-            <div class="flex items-center justify-between gap-3">
-              <span class="font-mono text-[11px] text-gray-400">02 / Stack</span>
-              <span class="rounded-full bg-white/5 px-2.5 py-1 text-[10px] font-medium text-gray-400">More walls</span>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">More offerwalls, one balance</h3>
-            <p class="mt-2 text-pretty text-sm leading-relaxed text-gray-400">
-              Bitcotasks is the main wall, and more partner offerwalls rotate in beside it, so there is always a task that fits your time and region.
-            </p>
-            <ul class="mt-6 space-y-3 border-t border-white/10 pt-6 text-[13px] text-gray-300">
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                Multiple offers to pick from
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                One credit balance across everything
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                Track pending and completed offers
-              </li>
-            </ul>
-            <a href="#panel" class="mt-7 inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/5">
-              See the offerwall hub
-            </a>
-          </article>
-
-          <!-- Spend -->
-          <article class="flex flex-col rounded-2xl border border-white/10 bg-surface p-6 sm:p-7">
-            <div class="flex items-center justify-between gap-3">
-              <span class="font-mono text-[11px] text-gray-400">03 / Spend</span>
-              <span class="rounded-full bg-white/5 px-2.5 py-1 text-[10px] font-medium text-gray-400">Any game</span>
-            </div>
-            <h3 class="mt-5 text-lg font-semibold text-white">Spend credits on any node</h3>
-            <p class="mt-2 text-pretty text-sm leading-relaxed text-gray-400">
-              Starter, community or dedicated: earned credits cover your node. Redeploy or upgrade whenever your community grows, without reaching for a card.
-            </p>
-            <ul class="mt-6 space-y-3 border-t border-white/10 pt-6 text-[13px] text-gray-300">
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                Minecraft, Rust, Palworld, Valheim, CS2, ARK
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                Upgrade without a new invoice
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="mt-0.5 size-3.5 shrink-0 text-gray-500" aria-hidden="true"></i>
-                DDoS protection and snapshots included
-              </li>
-            </ul>
-            <a href="#servers" class="mt-7 inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/5">
-              Browse deployable nodes
-              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
-            </a>
-          </article>
-        </div>
-
-        <div class="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-white/10 bg-[#12151B] px-6 py-5 sm:flex-row sm:items-center">
-          <div class="flex items-start gap-3">
-            <span class="grid size-9 shrink-0 place-items-center rounded-full bg-emerald-500/10 text-emerald-400">
-              <i data-lucide="coins" class="size-4" aria-hidden="true"></i>
-            </span>
-            <p class="text-pretty text-sm leading-relaxed text-gray-300">
-              <span class="font-semibold text-white">Your credit balance pays the bill.</span>
-              Earn first, deploy after: no card on file, no subscription to cancel.
-            </p>
-          </div>
-          <a href="#panel" class="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/5">
-            See the wallet in the panel
-            <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <p class="mt-8 text-center text-xs text-gray-400">Every node includes CosmicGuard DDoS protection, daily snapshots and the Pilaris control panel.</p>
-      </section>
-
-      <!-- ============ FOOTER CTA ============ -->
-      <section class="mx-auto max-w-7xl px-6 pb-20 sm:pb-24">
-        <div class="relative overflow-hidden rounded-3xl border border-white/10 px-6 py-16 text-center sm:px-16 sm:py-20">
-          <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#182030] via-[#2E2633] to-[#0A0C11]"></div>
-            <div class="absolute inset-0 bg-cover bg-center opacity-30"
-                 style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80'); -webkit-mask-image:linear-gradient(to top, black, transparent 80%); mask-image:linear-gradient(to top, black, transparent 80%);"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#07080A]/80 via-transparent to-transparent"></div>
-          </div>
-
-          <h2 class="mx-auto max-w-2xl text-balance font-serif text-4xl leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl">
-            Ready to earn your first server?
-          </h2>
-          <p class="mx-auto mt-4 max-w-md text-pretty text-sm leading-relaxed text-gray-300 sm:text-base">
-            Open Bitcotasks, finish a few offers, and your Pilaris node is paid for with credits. Pick your modpack, invite the group, skip the card.
-          </p>
-          <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="#credits" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-obsidian transition hover:bg-gray-200 active:scale-[0.98]">
-              Start earning credits
-              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
-            </a>
-            <a href="#panel" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10">
+            <a href="#panel" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/10">
+              <i data-lucide="layout-dashboard" class="size-4 text-gray-300" aria-hidden="true"></i>
               Tour the control panel
             </a>
           </div>
-          <p class="mt-5 text-[11px] text-gray-400">No card required &middot; Earn on Bitcotasks &middot; Spend on any node</p>
+
+          <!-- Real Dashboard Screenshot Frame -->
+          <div class="relative mx-auto mt-14 max-w-6xl">
+            <div class="overflow-hidden rounded-2xl border border-white/15 bg-surface shadow-2xl">
+              <div class="flex items-center justify-between border-b border-white/10 bg-[#0B0D11] px-4 py-3">
+                <div class="flex items-center gap-2">
+                  <span class="size-2.5 rounded-full bg-white/15"></span>
+                  <span class="size-2.5 rounded-full bg-white/15"></span>
+                  <span class="size-2.5 rounded-full bg-white/15"></span>
+                </div>
+                <div class="flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs text-gray-400">
+                  <i data-lucide="lock" class="size-3 text-emerald-400" aria-hidden="true"></i>
+                  console.pilaris.pro
+                </div>
+                <div class="hidden items-center gap-1.5 text-xs text-gray-400 sm:flex">
+                  <span class="size-1.5 rounded-full bg-emerald-400"></span>
+                  Live Console
+                </div>
+              </div>
+              <img
+                src="assets/pilaris-dashboard-all/shots/dashboard.png"
+                alt="Pilaris Game Hosting Control Panel Dashboard"
+                class="block w-full object-cover object-top"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SUPPORTED GAMES SHOWCASE ============ -->
+      <section id="games" class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-2xl">
+            <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+              Purpose-tuned for the games your community plays.
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-gray-400">
+              Every game has different CPU, memory, and network demands. Select a title below to inspect its supported mod loaders, configuration tools, and recommended setup.
+            </p>
+          </div>
+          <a href="https://console.pilaris.pro" class="inline-flex shrink-0 items-center gap-2 text-sm font-medium text-white transition hover:text-gray-300">
+            View all games in console
+            <i data-lucide="arrow-up-right" class="size-4" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-12">
+          <!-- Game selector grid -->
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:col-span-7" role="tablist" aria-label="Supported games">
+            <button type="button" role="tab" aria-selected="true" data-game="minecraft" class="game-card group relative overflow-hidden rounded-xl border border-white/30 bg-surface text-left transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/minecraft.png" alt="Minecraft" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">Minecraft</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">Java &amp; Bedrock</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">Paper, Forge, Fabric, Modpacks</p>
+              </div>
+            </button>
+
+            <button type="button" role="tab" aria-selected="false" data-game="rust" class="game-card group relative overflow-hidden rounded-xl border border-white/10 bg-surface text-left transition hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/rust.png" alt="Rust" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">Rust</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">Oxide / uMod</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">Custom maps, wipe schedules</p>
+              </div>
+            </button>
+
+            <button type="button" role="tab" aria-selected="false" data-game="palworld" class="game-card group relative overflow-hidden rounded-xl border border-white/10 bg-surface text-left transition hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/palworld.png" alt="Palworld" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">Palworld</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">SteamCMD</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">Co-op &amp; 32-player worlds</p>
+              </div>
+            </button>
+
+            <button type="button" role="tab" aria-selected="false" data-game="valheim" class="game-card group relative overflow-hidden rounded-xl border border-white/10 bg-surface text-left transition hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/valheim.png" alt="Valheim" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">Valheim</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">BepInEx</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">Valheim Plus &amp; world saves</p>
+              </div>
+            </button>
+
+            <button type="button" role="tab" aria-selected="false" data-game="cs2" class="game-card group relative overflow-hidden rounded-xl border border-white/10 bg-surface text-left transition hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/counter-strike-2.png" alt="Counter-Strike 2" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">Counter-Strike 2</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">Sub-tick</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">Workshop maps &amp; scrims</p>
+              </div>
+            </button>
+
+            <button type="button" role="tab" aria-selected="false" data-game="ark" class="game-card group relative overflow-hidden rounded-xl border border-white/10 bg-surface text-left transition hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/40">
+              <div class="flex h-28 w-full items-center justify-center overflow-hidden bg-obsidian/60 p-4">
+                <img src="assets/games/ark-ascended.png" alt="ARK: Survival Ascended" class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold text-white">ARK: Ascended</span>
+                  <span class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10px] text-gray-300">Cross-ARK</span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">CurseForge mods &amp; clusters</p>
+              </div>
+            </button>
+          </div>
+
+          <!-- Active game detail panel -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8 lg:col-span-5">
+            <div>
+              <div class="flex items-center justify-between gap-4">
+                <span id="gameBadge" class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
+                  <span class="size-1.5 rounded-full bg-emerald-400"></span>
+                  Instant Provisioning
+                </span>
+                <span id="gameTag" class="font-mono text-xs text-gray-400">JAVA &amp; BEDROCK</span>
+              </div>
+
+              <h3 id="gameTitle" class="mt-5 font-serif text-3xl text-white sm:text-4xl">Minecraft</h3>
+              <p id="gameDesc" class="mt-3 text-sm leading-relaxed text-gray-300">
+                Run vanilla SMPs, high-player Paper networks, or heavy Forge and Fabric modpacks without TPS drops. Switch server jars, install CurseForge or Modrinth packs, and manage world borders directly from the panel.
+              </p>
+
+              <div class="mt-6 space-y-3 border-t border-white/10 pt-6">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-400">Supported Loaders</span>
+                  <span id="gameLoaders" class="font-mono text-xs text-white">Paper, Purpur, Forge, Fabric, NeoForge</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-400">Recommended Memory</span>
+                  <span id="gameRam" class="font-mono text-xs text-white">4 GB – 16 GB DDR5</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-400">Mod &amp; Plugin Source</span>
+                  <span id="gameMods" class="font-mono text-xs text-white">Modrinth, CurseForge, Spigot</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a id="gameCta" href="https://console.pilaris.pro" class="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-obsidian transition hover:bg-gray-200">
+                Deploy Minecraft Server
+                <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
+              </a>
+              <a href="#panel" class="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/5">
+                See panel
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INTERACTIVE CONTROL PANEL TOUR ============ -->
+      <section id="panel" class="border-y border-white/10 bg-surface/60 py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+              Every server tool in one unified control panel.
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-gray-400">
+              No clunky legacy panels or separate FTP clients required. Inspect the actual Pilaris interface across provisioning, live management, files, plugins, worlds, and backups.
+            </p>
+          </div>
+
+          <!-- Panel Tabs -->
+          <div class="mt-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Control panel screens">
+            <button type="button" role="tab" aria-selected="true" data-shot="dashboard" class="panel-tab rounded-full bg-white px-4 py-2 text-xs font-semibold text-obsidian transition">Overview</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="servers" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Servers</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="create" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Create Server</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="manage" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Manage &amp; Console</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="files" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">File Manager</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="plugins" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Plugins &amp; Mods</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="worlds" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Worlds</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="backups" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Backups</button>
+            <button type="button" role="tab" aria-selected="false" data-shot="store" class="panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white">Store &amp; Credits</button>
+          </div>
+
+          <!-- Active Screenshot Display -->
+          <div class="mt-8 overflow-hidden rounded-2xl border border-white/15 bg-obsidian shadow-2xl">
+            <div class="flex flex-col justify-between gap-3 border-b border-white/10 bg-[#0B0D11] px-5 py-4 sm:flex-row sm:items-center">
+              <div>
+                <h3 id="panelTitle" class="text-sm font-semibold text-white">Dashboard Overview</h3>
+                <p id="panelDesc" class="mt-0.5 text-xs text-gray-400">Monitor active game servers, resource usage, and recent activity at a glance.</p>
+              </div>
+              <div class="flex items-center gap-3 self-start sm:self-auto">
+                <span id="panelPath" class="rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-gray-400">/dashboard</span>
+                <a href="https://console.pilaris.pro" class="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-white transition hover:bg-white/10">
+                  Open Console
+                  <i data-lucide="arrow-up-right" class="size-3.5" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="bg-[#07080A]">
+              <img
+                id="panelImg"
+                src="assets/pilaris-dashboard-all/shots/dashboard.png"
+                alt="Pilaris Dashboard Overview"
+                class="block w-full object-cover object-top transition-opacity duration-200"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVER MANAGEMENT CAPABILITIES ============ -->
+      <section id="features" class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="max-w-2xl">
+          <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+            Built for server admins, not generic cloud engineers.
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-gray-400">
+            Skip SSH setups, manual systemd scripts, and broken mod dependencies. Pilaris gives you the exact tools needed to run a stable community world.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <!-- Feature 1 -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8">
+            <div>
+              <div class="flex size-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white">
+                <i data-lucide="package-plus" class="size-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="mt-5 text-lg font-semibold text-white">One-click Modpacks &amp; Plugins</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Browse and install plugins, datapacks, and modpacks directly inside the panel. Automatic dependency resolution keeps your server booting cleanly after updates.
+              </p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-xl border border-white/10">
+              <img src="assets/pilaris-dashboard-all/shots/plugins.png" alt="Pilaris Plugins and Modpacks Manager" class="block w-full object-cover object-top" />
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8">
+            <div>
+              <div class="flex size-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white">
+                <i data-lucide="folder-code" class="size-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="mt-5 text-lg font-semibold text-white">Web File Manager &amp; Config Editor</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Edit <code class="font-mono text-xs text-gray-200">server.properties</code>, <code class="font-mono text-xs text-gray-200">oxide.config.json</code>, or <code class="font-mono text-xs text-gray-200">PalWorldSettings.ini</code> right in your browser, or connect via SFTP for bulk transfers.
+              </p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-xl border border-white/10">
+              <img src="assets/pilaris-dashboard-all/shots/files.png" alt="Pilaris Web File Manager" class="block w-full object-cover object-top" />
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8">
+            <div>
+              <div class="flex size-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white">
+                <i data-lucide="globe" class="size-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="mt-5 text-lg font-semibold text-white">Dedicated World Management</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Upload existing saves, switch between seasonal worlds, or reset the Nether and End without touching your main overworld or player inventories.
+              </p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-xl border border-white/10">
+              <img src="assets/pilaris-dashboard-all/shots/worlds.png" alt="Pilaris World Management" class="block w-full object-cover object-top" />
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8">
+            <div>
+              <div class="flex size-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white">
+                <i data-lucide="history" class="size-5" aria-hidden="true"></i>
+              </div>
+              <h3 class="mt-5 text-lg font-semibold text-white">Automated Snapshots &amp; Rollbacks</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Schedule automatic backups before mod updates, Rust wipes, or major community events. Roll back your entire server state in one click if anything breaks.
+              </p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-xl border border-white/10">
+              <img src="assets/pilaris-dashboard-all/shots/backups.png" alt="Pilaris Automated Backups" class="block w-full object-cover object-top" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Step Deployment Flow -->
+        <div class="mt-10 grid gap-4 rounded-2xl border border-white/10 bg-surface/60 p-6 sm:grid-cols-3 sm:p-8">
+          <div class="flex gap-4">
+            <span class="flex size-7 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-medium text-white tabular-nums">1</span>
+            <div>
+              <h3 class="text-sm font-semibold text-white">Pick your game &amp; region</h3>
+              <p class="mt-1 text-xs leading-relaxed text-gray-400">Choose your title, server location, and RAM/CPU allocation in the Create wizard.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="flex size-7 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-medium text-white tabular-nums">2</span>
+            <div>
+              <h3 class="text-sm font-semibold text-white">Install mods or upload worlds</h3>
+              <p class="mt-1 text-xs leading-relaxed text-gray-400">Add plugins in one click or drop your existing world save into the Web File Manager.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="flex size-7 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-medium text-white tabular-nums">3</span>
+            <div>
+              <h3 class="text-sm font-semibold text-white">Share your IP &amp; play</h3>
+              <p class="mt-1 text-xs leading-relaxed text-gray-400">Monitor live TPS, console logs, and automated backups from any browser.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FREE TIER & PLC ECONOMY ============ -->
+      <section id="plc-economy" class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="max-w-2xl">
+          <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+            Start free. Scale forever or rent weekly with PLC.
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-gray-400">
+            Every account starts with a free game server—no credit card required. Need more power for a modpack or weekend wipe? Earn <strong class="font-semibold text-white">PLC</strong> through shortlinks and offerwall quests.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-12">
+          <!-- Free Starter Tier Card -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/15 bg-surface p-6 sm:p-8 lg:col-span-5">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">Free Starter</span>
+                <span class="font-mono text-xs text-gray-400">$0 / month</span>
+              </div>
+              <h3 class="mt-5 font-serif text-3xl text-white">Base Game Server</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Everything you need to launch a private SMP, co-op world, or test server with full panel access.
+              </p>
+
+              <div class="mt-6 grid grid-cols-3 gap-3 rounded-xl border border-white/10 bg-obsidian p-4">
+                <div>
+                  <span class="text-[11px] text-gray-400">Memory</span>
+                  <p class="mt-0.5 font-mono text-base font-semibold text-white tabular-nums">2 GB RAM</p>
+                </div>
+                <div>
+                  <span class="text-[11px] text-gray-400">Storage</span>
+                  <p class="mt-0.5 font-mono text-base font-semibold text-white tabular-nums">3 GB Disk</p>
+                </div>
+                <div>
+                  <span class="text-[11px] text-gray-400">Compute</span>
+                  <p class="mt-0.5 font-mono text-base font-semibold text-white tabular-nums">120% CPU</p>
+                </div>
+              </div>
+
+              <ul class="mt-6 space-y-2.5 text-sm text-gray-300">
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                  Full Web File Manager, SFTP &amp; Live Console
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                  1-Click Plugins, Worlds &amp; Automated Backups
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="check" class="size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                  Always-on Game-Aware DDoS Protection
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <i data-lucide="refresh-cw" class="size-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                  Renew with PLC to keep your server running (extend up to 7 days at a time)
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://console.pilaris.pro" class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-obsidian transition hover:bg-gray-200">
+              Claim Free Server
+              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- PLC Earning & Spending Interactive Panel -->
+          <div class="flex flex-col justify-between rounded-2xl border border-white/10 bg-surface p-6 sm:p-8 lg:col-span-7">
+            <div>
+              <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+                <div>
+                  <h3 class="text-lg font-semibold text-white">Upgrade with PLC</h3>
+                  <p class="mt-1 text-xs text-gray-400">Choose how you spend your earned PLC coins.</p>
+                </div>
+                <div class="inline-flex rounded-full border border-white/10 bg-obsidian p-1" role="tablist" aria-label="PLC upgrade modes">
+                  <button type="button" role="tab" aria-selected="true" id="plcPermBtn" class="rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-obsidian transition">Permanent Upgrades</button>
+                  <button type="button" role="tab" aria-selected="false" id="plcRentBtn" class="rounded-full px-4 py-1.5 text-xs font-medium text-gray-300 transition hover:text-white">Weekly Rentals</button>
+                </div>
+              </div>
+
+              <div id="plcModeBox" class="mt-6 rounded-xl border border-white/10 bg-obsidian p-5">
+                <h4 id="plcModeTitle" class="text-sm font-semibold text-white">Permanent Resource Upgrades</h4>
+                <p id="plcModeDesc" class="mt-1.5 text-sm leading-relaxed text-gray-400">
+                  Spend PLC once to permanently increase your server's RAM, NVMe disk space, or CPU allocation. Your upgraded specs stay on your account forever.
+                </p>
+              </div>
+
+              <h4 class="mt-8 text-xs font-medium uppercase tracking-wider text-gray-400">How to earn PLC</h4>
+              <div class="mt-3 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-xl border border-white/10 bg-obsidian p-4">
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="link" class="size-4 text-emerald-400" aria-hidden="true"></i>
+                    <span class="text-sm font-semibold text-white">Shortlinks</span>
+                  </div>
+                  <p class="mt-2 text-xs leading-relaxed text-gray-400">
+                    Complete quick daily shortlinks from the dashboard to earn steady PLC in under a minute.
+                  </p>
+                </div>
+
+                <div class="rounded-xl border border-white/10 bg-obsidian p-4">
+                  <div class="flex items-center gap-2.5">
+                    <i data-lucide="trophy" class="size-4 text-amber-400" aria-hidden="true"></i>
+                    <span class="text-sm font-semibold text-white">Offerwall Quests</span>
+                  </div>
+                  <p class="mt-2 text-xs leading-relaxed text-gray-400">
+                    Finish partner quests, surveys, and game milestones on the offerwall for larger PLC payouts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-5 text-xs text-gray-400">
+              <span>Manage your PLC balance in the Store tab</span>
+              <a href="https://console.pilaris.pro" class="font-medium text-white transition hover:text-gray-300">Open Store &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW FREE HOSTING & RENEWAL WORKS ============ -->
+      <section id="how-it-works" class="border-y border-white/10 bg-surface/60 py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+              How free hosting works on Pilaris.
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-gray-400">
+              No credit card, no trial expiration. Keep your server online by renewing with PLC, and upgrade whenever your world needs more power.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-2xl border border-white/10 bg-obsidian p-6">
+              <span class="inline-flex size-8 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-semibold text-white tabular-nums">01</span>
+              <h3 class="mt-4 text-base font-semibold text-white">Claim your free server</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Start with <span class="text-white">2 GB RAM</span>, <span class="text-white">3 GB Disk</span>, and <span class="text-white">120% CPU</span> right after signing in.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-obsidian p-6">
+              <span class="inline-flex size-8 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-semibold text-white tabular-nums">02</span>
+              <h3 class="mt-4 text-base font-semibold text-white">Earn PLC coins</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Complete quick daily <span class="text-white">shortlinks</span> or partner <span class="text-white">offerwall quests</span> to build your PLC balance.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-obsidian p-6">
+              <span class="inline-flex size-8 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-semibold text-white tabular-nums">03</span>
+              <h3 class="mt-4 text-base font-semibold text-white">Renew up to 7 days</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Use PLC to renew your server and keep it running—extend your timer up to <span class="text-white">7 days at a time</span>.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-obsidian p-6">
+              <span class="inline-flex size-8 items-center justify-center rounded-full border border-white/15 bg-white/5 font-mono text-xs font-semibold text-white tabular-nums">04</span>
+              <h3 class="mt-4 text-base font-semibold text-white">Rent or upgrade forever</h3>
+              <p class="mt-2 text-sm leading-relaxed text-gray-400">
+                Spend PLC to <span class="text-white">rent weekly boosts</span> for events or <span class="text-white">permanently upgrade</span> your RAM, Disk, and CPU.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FREE VS PLC-UPGRADED COMPARISON ============ -->
+      <section id="compare" class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="max-w-2xl">
+          <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+            Free out of the box. Expandable with PLC.
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-gray-400">
+            Every server includes the full Pilaris control panel. Use PLC when you want longer renewal windows or extra compute.
+          </p>
+        </div>
+
+        <div class="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-surface">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm">
+              <thead class="border-b border-white/10 bg-obsidian/60 text-xs uppercase tracking-wider text-gray-400">
+                <tr>
+                  <th class="px-6 py-4 font-medium">Capability</th>
+                  <th class="px-6 py-4 font-medium text-white">Free Starter</th>
+                  <th class="px-6 py-4 font-medium text-emerald-300">With PLC Upgrades</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10 text-gray-300">
+                <tr>
+                  <td class="px-6 py-4 font-medium text-white">Base Memory (RAM)</td>
+                  <td class="px-6 py-4 font-mono tabular-nums">2 GB RAM</td>
+                  <td class="px-6 py-4 font-mono text-white tabular-nums">Permanent &amp; Weekly RAM Boosts</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-medium text-white">NVMe Storage</td>
+                  <td class="px-6 py-4 font-mono tabular-nums">3 GB Disk</td>
+                  <td class="px-6 py-4 font-mono text-white tabular-nums">Expandable Disk Allocation</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-medium text-white">CPU Allocation</td>
+                  <td class="px-6 py-4 font-mono tabular-nums">120% CPU</td>
+                  <td class="px-6 py-4 font-mono text-white tabular-nums">Scalable CPU Cores</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-medium text-white">Server Renewal</td>
+                  <td class="px-6 py-4">Renew with PLC</td>
+                  <td class="px-6 py-4 text-white">Extend up to 7 days at a time</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 font-medium text-white">Control Panel, SFTP &amp; Backups</td>
+                  <td class="px-6 py-4 text-emerald-400">Included</td>
+                  <td class="px-6 py-4 text-emerald-400">Included</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INTERACTIVE SERVER SIZING ESTIMATOR ============ -->
+      <section id="estimator" class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-5">
+            <h2 class="font-serif text-4xl tracking-tight text-white sm:text-5xl">
+              Right-size your server before you deploy.
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-gray-400">
+              Not sure how much memory your modpack or player count needs? Use the estimator to get a practical hardware baseline, then launch directly in the Pilaris Console.
+            </p>
+            <div class="mt-6 rounded-xl border border-white/10 bg-surface p-4">
+              <div class="flex items-start gap-3">
+                <i data-lucide="coins" class="mt-0.5 size-5 shrink-0 text-gray-300" aria-hidden="true"></i>
+                <div>
+                  <h3 class="text-sm font-semibold text-white">Flexible Pilaris Credits</h3>
+                  <p class="mt-1 text-xs leading-relaxed text-gray-400">
+                    Top up credits in the Store tab, scale RAM or storage up and down as your community grows, and never pay for idle servers you aren't running.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-white/10 bg-surface p-6 sm:p-8 lg:col-span-7">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label for="estGame" class="block text-xs font-medium text-gray-300">Select Game</label>
+                <select id="estGame" class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-3.5 py-2.5 text-sm text-white focus:border-white/40 focus:outline-none">
+                  <option value="minecraft">Minecraft (Java / Modded)</option>
+                  <option value="rust">Rust (Community / Modded)</option>
+                  <option value="palworld">Palworld</option>
+                  <option value="valheim">Valheim</option>
+                  <option value="cs2">Counter-Strike 2</option>
+                  <option value="ark">ARK: Survival Ascended</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="estPlayers" class="block text-xs font-medium text-gray-300">Expected Concurrent Players</label>
+                <select id="estPlayers" class="mt-2 w-full rounded-lg border border-white/15 bg-obsidian px-3.5 py-2.5 text-sm text-white focus:border-white/40 focus:outline-none">
+                  <option value="small">2 – 10 players (Friends / Co-op)</option>
+                  <option value="medium" selected>10 – 30 players (Community)</option>
+                  <option value="large">30 – 80+ players (Large Network)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-3 gap-4 rounded-xl border border-white/10 bg-obsidian p-5">
+              <div>
+                <span class="text-xs text-gray-400">Recommended RAM</span>
+                <p id="estRam" class="mt-1 font-mono text-lg font-semibold text-white tabular-nums">8 GB</p>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400">Dedicated vCPU</span>
+                <p id="estCpu" class="mt-1 font-mono text-lg font-semibold text-white tabular-nums">4 Cores</p>
+              </div>
+              <div>
+                <span class="text-xs text-gray-400">NVMe Storage</span>
+                <p id="estDisk" class="mt-1 font-mono text-lg font-semibold text-white tabular-nums">40 GB</p>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
+              <p id="estNote" class="text-xs text-gray-400">Ideal for Paper/Purpur with 20+ plugins or medium Forge/Fabric modpacks.</p>
+              <a href="https://console.pilaris.pro" class="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-obsidian transition hover:bg-gray-200">
+                Launch in Console
+                <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section id="faq" class="border-t border-white/10 bg-surface/40 py-20 sm:py-28">
+        <div class="mx-auto max-w-3xl px-6">
+          <h2 class="text-center font-serif text-4xl tracking-tight text-white sm:text-5xl">
+            Frequently asked questions
+          </h2>
+          <p class="mt-4 text-center text-base text-gray-400">
+            Everything you need to know about deploying and managing game servers on Pilaris.
+          </p>
+
+          <div class="mt-12 divide-y divide-white/10 border-y border-white/10">
+            <details class="group py-5" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium text-white">
+                Can I upload my existing world or modpack?
+                <i data-lucide="chevron-down" class="size-4 shrink-0 text-gray-400 transition group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-gray-400">
+                Yes. You can upload existing world folders, plugin configs, or custom server jars using the built-in Web File Manager or via SFTP.
+              </p>
+            </details>
+
+            <details class="group py-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium text-white">
+                How does DDoS protection work for game traffic?
+                <i data-lucide="chevron-down" class="size-4 shrink-0 text-gray-400 transition group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-gray-400">
+                Every node includes always-on L3/L4/L7 mitigation tuned for UDP game protocols and query ports, filtering malicious floods without adding noticeable latency for players.
+              </p>
+            </details>
+
+            <details class="group py-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium text-white">
+                Can I switch games or upgrade RAM later?
+                <i data-lucide="chevron-down" class="size-4 shrink-0 text-gray-400 transition group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-gray-400">
+                Yes. You can scale your server's RAM, CPU, and storage from the control panel as your player count or modpack grows, without losing your world data.
+              </p>
+            </details>
+
+            <details class="group py-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium text-white">
+                Are automated backups included?
+                <i data-lucide="chevron-down" class="size-4 shrink-0 text-gray-400 transition group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p class="mt-3 text-sm leading-relaxed text-gray-400">
+                Yes. You can create manual snapshots before risky updates or schedule automated backups in the Backups tab and restore any point in one click.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FOOTER CTA ============ -->
+      <section class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-surface p-8 text-center sm:p-14">
+          <h2 class="mx-auto max-w-2xl font-serif text-4xl tracking-tight text-white sm:text-5xl">
+            Ready to launch your next world?
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-base text-gray-400">
+            Open the Pilaris Console, pick your game, and have your server online in seconds.
+          </p>
+          <div class="mt-8 flex justify-center">
+            <a href="https://console.pilaris.pro" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-obsidian shadow-lg transition hover:bg-gray-200">
+              Open Pilaris Console
+              <i data-lucide="arrow-right" class="size-4" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </section>
     </main>
   </div>
 
   <!-- ============ FOOTER ============ -->
-  <footer id="docs" class="border-t border-white/5 bg-obsidian">
-    <div class="mx-auto max-w-7xl px-6 py-14">
-      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
-        <div class="lg:col-span-2">
-          <img src="assets/pilaris-wordmark.png" alt="Pilaris" class="h-7 w-auto" />
-          <p class="mt-4 max-w-xs text-sm leading-relaxed text-gray-400">
-            Low-latency game infrastructure for communities that care about every tick.
+  <footer class="border-t border-white/10 bg-obsidian">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col justify-between gap-8 md:flex-row md:items-center">
+        <div>
+          <a href="#top" class="inline-flex items-center" aria-label="Pilaris home">
+            <img src="assets/pilaris-wordmark.png" alt="Pilaris" class="h-6 w-auto" />
+          </a>
+          <p class="mt-3 max-w-xs text-xs leading-relaxed text-gray-400">
+            Dedicated game server hosting with high-clock compute, automated backups, and a unified control panel.
           </p>
-          <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5">
-            <span class="relative flex size-1.5">
-              <span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60"></span>
-              <span class="relative inline-flex size-1.5 rounded-full bg-emerald-400"></span>
-            </span>
-            <span class="text-[11px] text-gray-300">All 28 global locations operational</span>
-          </div>
         </div>
 
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-400">Product</p>
-          <ul class="mt-4 space-y-2.5 text-sm text-gray-400">
-            <li><a href="#servers" class="transition hover:text-white">Game servers</a></li>
-            <li><a href="#credits" class="transition hover:text-white">Earn credits</a></li>
-            <li><a href="#panel" class="transition hover:text-white">Modpack library</a></li>
-            <li><a href="#panel" class="transition hover:text-white">Control panel</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-400">Network</p>
-          <ul class="mt-4 space-y-2.5 text-sm text-gray-400">
-            <li><a href="#network" class="transition hover:text-white">Global locations</a></li>
-            <li><a href="#network" class="transition hover:text-white">Network map</a></li>
-            <li><a href="#servers" class="transition hover:text-white">DDoS protection</a></li>
-            <li><a href="#" class="transition hover:text-white">Status page</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-400">Resources</p>
-          <ul class="mt-4 space-y-2.5 text-sm text-gray-400">
-            <li><a href="#" class="transition hover:text-white">Documentation</a></li>
-            <li><a href="#" class="transition hover:text-white">API reference</a></li>
-            <li><a href="#" class="transition hover:text-white">Changelog</a></li>
-            <li><a href="#" class="transition hover:text-white">Community</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-400">Legal</p>
-          <ul class="mt-4 space-y-2.5 text-sm text-gray-400">
-            <li><a href="/terms/" class="transition hover:text-white">Terms of Service</a></li>
-            <li><a href="/privacy/" class="transition hover:text-white">Privacy Policy</a></li>
-            <li><a href="/acceptable-use/" class="transition hover:text-white">Acceptable Use</a></li>
-            <li><a href="#" class="transition hover:text-white">Status</a></li>
-          </ul>
+        <div class="flex flex-wrap gap-6 text-xs text-gray-400">
+          <a href="#games" class="transition hover:text-white">Games</a>
+          <a href="#panel" class="transition hover:text-white">Control Panel</a>
+          <a href="#plc-economy" class="transition hover:text-white">Free Tier &amp; PLC</a>
+          <a href="#features" class="transition hover:text-white">Server Tools</a>
+          <a href="https://console.pilaris.pro/docs" class="transition hover:text-white">Docs</a>
+          <a href="https://status.pilaris.pro/" class="transition hover:text-white">Status</a>
+          <a href="privacy/" class="transition hover:text-white">Privacy</a>
+          <a href="terms/" class="transition hover:text-white">Terms</a>
+          <a href="acceptable-use/" class="transition hover:text-white">Acceptable Use</a>
         </div>
       </div>
 
-      <div class="mt-14 flex items-center justify-center overflow-hidden" aria-hidden="true">
-        <img src="assets/pilaris-wordmark.png" alt="" class="w-full max-w-2xl opacity-[0.06]" loading="lazy" />
-      </div>
-
-      <div class="mt-10 flex flex-col gap-4 border-t border-white/5 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <div class="space-y-1">
-          <p class="text-xs text-gray-400">&copy; 2026 Pilaris. All rights reserved.</p>
-          <p class="text-xs text-gray-400">Not affiliated with any of the games mentioned.</p>
-        </div>
-        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-gray-400">
-          <a href="/privacy/" class="transition hover:text-white">Privacy</a>
-          <a href="/terms/" class="transition hover:text-white">Terms</a>
-          <a href="/acceptable-use/" class="transition hover:text-white">Acceptable Use</a>
-          <a href="#" class="transition hover:text-white">Status</a>
-        </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-xs text-gray-500">
+        &copy; <span id="year"></span> Pilaris. All rights reserved.
       </div>
     </div>
   </footer>
@@ -845,36 +871,282 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile menu
+    // Mobile menu toggle
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn && mobileMenu) {
-      const menuIcon = menuBtn.querySelector('[data-menu-icon]');
-      const closeIcon = menuBtn.querySelector('[data-close-icon]');
+    const menuIcon = menuBtn.querySelector('[data-menu-icon]');
+    const closeIcon = menuBtn.querySelector('[data-close-icon]');
+    menuBtn.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!open));
+      menuIcon.classList.toggle('hidden', !open);
+      closeIcon.classList.toggle('hidden', open);
+    });
 
-      const setMenuState = (isHidden) => {
-        mobileMenu.classList.toggle('hidden', isHidden);
-        menuBtn.setAttribute('aria-expanded', String(!isHidden));
-        menuBtn.setAttribute('aria-label', isHidden ? 'Open menu' : 'Close menu');
-        if (menuIcon) menuIcon.classList.toggle('hidden', !isHidden);
-        if (closeIcon) closeIcon.classList.toggle('hidden', isHidden);
-      };
+    // Supported Games interactive switcher
+    const gamesData = {
+      minecraft: {
+        title: 'Minecraft',
+        tag: 'JAVA & BEDROCK',
+        desc: 'Run vanilla SMPs, high-player Paper networks, or heavy Forge and Fabric modpacks without TPS drops. Switch server jars, install CurseForge or Modrinth packs, and manage world borders directly from the panel.',
+        loaders: 'Paper, Purpur, Forge, Fabric, NeoForge',
+        ram: '4 GB – 16 GB DDR5',
+        mods: 'Modrinth, CurseForge, Spigot',
+        cta: 'Deploy Minecraft Server'
+      },
+      rust: {
+        title: 'Rust',
+        tag: 'OXIDE / UMOD',
+        desc: 'Host low-latency wipe cycles with full Oxide/uMod support, custom procedural or Barren map seeds, and scheduled wipe automation.',
+        loaders: 'Vanilla, Oxide / uMod, Carbon',
+        ram: '8 GB – 16 GB DDR5',
+        mods: 'uMod, Codefling, Custom Maps',
+        cta: 'Deploy Rust Server'
+      },
+      palworld: {
+        title: 'Palworld',
+        tag: 'STEAMCMD',
+        desc: 'Keep your dedicated Palworld island online 24/7 with tuned PalWorldSettings.ini controls, automated backups before patches, and smooth 32-player co-op.',
+        loaders: 'Dedicated SteamCMD',
+        ram: '8 GB – 16 GB DDR5',
+        mods: 'UE4SS & Server Configs',
+        cta: 'Deploy Palworld Server'
+      },
+      valheim: {
+        title: 'Valheim',
+        tag: 'BEPINEX',
+        desc: 'Explore persistent Viking worlds with automatic world saves, Valheim Plus support, and easy BepInEx mod management.',
+        loaders: 'Vanilla, BepInEx, Valheim Plus',
+        ram: '4 GB – 8 GB DDR5',
+        mods: 'Thunderstore, Nexus',
+        cta: 'Deploy Valheim Server'
+      },
+      cs2: {
+        title: 'Counter-Strike 2',
+        tag: 'SUB-TICK',
+        desc: 'Spin up competitive 5v5 scrims, retake servers, or community surf/bhop lobbies with Workshop map collections and low-jitter routing.',
+        loaders: 'CS2 Dedicated, CounterStrikeSharp',
+        ram: '4 GB – 8 GB DDR5',
+        mods: 'Steam Workshop, Metamod',
+        cta: 'Deploy CS2 Server'
+      },
+      ark: {
+        title: 'ARK: Survival Ascended',
+        tag: 'CROSS-ARK',
+        desc: 'Build multi-map Cross-ARK clusters with CurseForge mod IDs, custom dino/harvest multipliers, and high-capacity NVMe storage.',
+        loaders: 'ASA Dedicated, Cross-ARK',
+        ram: '12 GB – 24 GB DDR5',
+        mods: 'CurseForge Cross-Platform Mods',
+        cta: 'Deploy ARK Server'
+      }
+    };
 
-      menuBtn.addEventListener('click', () => {
-        setMenuState(!mobileMenu.classList.contains('hidden'));
+    const gameCards = Array.from(document.querySelectorAll('.game-card'));
+    function selectGame(card) {
+      const key = card.dataset.game;
+      const data = gamesData[key];
+      if (!data) return;
+
+      gameCards.forEach(c => {
+        c.setAttribute('aria-selected', 'false');
+        c.classList.remove('border-white/30', 'ring-1', 'ring-white/30');
+        c.classList.add('border-white/10');
       });
-      mobileMenu.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => setMenuState(true));
-      });
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
-          setMenuState(true);
-          menuBtn.focus();
+      card.setAttribute('aria-selected', 'true');
+      card.classList.remove('border-white/10');
+      card.classList.add('border-white/30', 'ring-1', 'ring-white/30');
+
+      document.getElementById('gameTitle').textContent = data.title;
+      document.getElementById('gameTag').textContent = data.tag;
+      document.getElementById('gameDesc').textContent = data.desc;
+      document.getElementById('gameLoaders').textContent = data.loaders;
+      document.getElementById('gameRam').textContent = data.ram;
+      document.getElementById('gameMods').textContent = data.mods;
+      document.getElementById('gameCta').firstChild.textContent = data.cta + ' ';
+    }
+    gameCards.forEach((card, idx) => {
+      card.addEventListener('click', () => selectGame(card));
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = gameCards[(idx + 1) % gameCards.length];
+          next.focus();
+          selectGame(next);
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = gameCards[(idx - 1 + gameCards.length) % gameCards.length];
+          prev.focus();
+          selectGame(prev);
         }
       });
-    }
+    });
 
+    // Control Panel Tour interactive switcher
+    const panelShots = {
+      dashboard: {
+        title: 'Dashboard Overview',
+        desc: 'Monitor active game servers, resource usage, and recent activity at a glance.',
+        path: '/dashboard',
+        src: 'assets/pilaris-dashboard-all/shots/dashboard.png'
+      },
+      servers: {
+        title: 'Server Fleet',
+        desc: 'View all your running game instances, IP addresses, and live player status in one list.',
+        path: '/servers',
+        src: 'assets/pilaris-dashboard-all/shots/servers.png'
+      },
+      create: {
+        title: 'Create Server',
+        desc: 'Pick your game, region, and resource allocation to deploy a new server in seconds.',
+        path: '/servers/create',
+        src: 'assets/pilaris-dashboard-all/shots/create.png'
+      },
+      manage: {
+        title: 'Manage & Live Console',
+        desc: 'Send console commands, watch real-time logs, and track CPU/RAM telemetry.',
+        path: '/servers/manage',
+        src: 'assets/pilaris-dashboard-all/shots/manage.png'
+      },
+      files: {
+        title: 'Web File Manager',
+        desc: 'Browse directories, upload world saves, and edit configuration files in the browser.',
+        path: '/servers/files',
+        src: 'assets/pilaris-dashboard-all/shots/files.png'
+      },
+      plugins: {
+        title: 'Plugins & Modpacks',
+        desc: 'Search and install plugins or modpacks with one click directly onto your server.',
+        path: '/servers/plugins',
+        src: 'assets/pilaris-dashboard-all/shots/plugins.png'
+      },
+      worlds: {
+        title: 'World Management',
+        desc: 'Manage active worlds, upload custom maps, and reset dimensions safely.',
+        path: '/servers/worlds',
+        src: 'assets/pilaris-dashboard-all/shots/worlds.png'
+      },
+      backups: {
+        title: 'Automated Backups',
+        desc: 'Create manual snapshots or schedule automatic backups with 1-click rollback.',
+        path: '/servers/backups',
+        src: 'assets/pilaris-dashboard-all/shots/backups.png'
+      },
+      store: {
+        title: 'Store & Credits',
+        desc: 'Manage your Pilaris Credits, upgrade server resources, and view billing history.',
+        path: '/store',
+        src: 'assets/pilaris-dashboard-all/shots/store.png'
+      }
+    };
+
+    const panelTabs = Array.from(document.querySelectorAll('.panel-tab'));
+    function selectPanelTab(tab) {
+      const key = tab.dataset.shot;
+      const shot = panelShots[key];
+      if (!shot) return;
+
+      panelTabs.forEach(t => {
+        t.setAttribute('aria-selected', 'false');
+        t.className = 'panel-tab rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition hover:bg-white/10 hover:text-white';
+      });
+      tab.setAttribute('aria-selected', 'true');
+      tab.className = 'panel-tab rounded-full bg-white px-4 py-2 text-xs font-semibold text-obsidian transition';
+
+      document.getElementById('panelTitle').textContent = shot.title;
+      document.getElementById('panelDesc').textContent = shot.desc;
+      document.getElementById('panelPath').textContent = shot.path;
+      const img = document.getElementById('panelImg');
+      img.src = shot.src;
+      img.alt = 'Pilaris ' + shot.title;
+    }
+    panelTabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => selectPanelTab(tab));
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          const next = panelTabs[(idx + 1) % panelTabs.length];
+          next.focus();
+          selectPanelTab(next);
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          const prev = panelTabs[(idx - 1 + panelTabs.length) % panelTabs.length];
+          prev.focus();
+          selectPanelTab(prev);
+        }
+      });
+    });
+
+    // PLC Upgrade vs Weekly Rental toggle
+    const plcPermBtn = document.getElementById('plcPermBtn');
+    const plcRentBtn = document.getElementById('plcRentBtn');
+    const plcModeTitle = document.getElementById('plcModeTitle');
+    const plcModeDesc = document.getElementById('plcModeDesc');
+
+    plcPermBtn.addEventListener('click', () => {
+      plcPermBtn.setAttribute('aria-selected', 'true');
+      plcRentBtn.setAttribute('aria-selected', 'false');
+      plcPermBtn.className = 'rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-obsidian transition';
+      plcRentBtn.className = 'rounded-full px-4 py-1.5 text-xs font-medium text-gray-300 transition hover:text-white';
+      plcModeTitle.textContent = 'Permanent Resource Upgrades';
+      plcModeDesc.textContent = 'Spend PLC once to permanently increase your server\'s RAM, NVMe disk space, or CPU allocation. Your upgraded specs stay on your account forever.';
+    });
+
+    plcRentBtn.addEventListener('click', () => {
+      plcRentBtn.setAttribute('aria-selected', 'true');
+      plcPermBtn.setAttribute('aria-selected', 'false');
+      plcRentBtn.className = 'rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-obsidian transition';
+      plcPermBtn.className = 'rounded-full px-4 py-1.5 text-xs font-medium text-gray-300 transition hover:text-white';
+      plcModeTitle.textContent = 'Weekly Resource Rentals';
+      plcModeDesc.textContent = 'Rent extra RAM, Disk, or CPU for 7 days at a time using PLC—ideal for weekend modpack events, Rust wipes, or temporary player spikes.';
+    });
+
+    // Server Sizing Estimator
+    const sizingMatrix = {
+      minecraft: {
+        small: { ram: '4 GB', cpu: '2 Cores', disk: '25 GB', note: 'Great for vanilla SMPs or light Fabric/Paper setups with friends.' },
+        medium: { ram: '8 GB', cpu: '4 Cores', disk: '40 GB', note: 'Ideal for Paper/Purpur with 20+ plugins or medium Forge/Fabric modpacks.' },
+        large: { ram: '16 GB', cpu: '6 Cores', disk: '80 GB', note: 'Built for heavy modpacks (All The Mods, RLCraft) or 50+ concurrent players.' }
+      },
+      rust: {
+        small: { ram: '8 GB', cpu: '3 Cores', disk: '40 GB', note: 'Smooth performance for small private or duo/trio Rust maps.' },
+        medium: { ram: '12 GB', cpu: '4 Cores', disk: '60 GB', note: 'Recommended for 3.5k–4k procedural maps with Oxide plugins.' },
+        large: { ram: '16 GB', cpu: '6 Cores', disk: '100 GB', note: 'Handles high-entity modded wipes and 80+ concurrent players.' }
+      },
+      palworld: {
+        small: { ram: '8 GB', cpu: '3 Cores', disk: '30 GB', note: 'Reliable 24/7 co-op world for 2–10 friends.' },
+        medium: { ram: '12 GB', cpu: '4 Cores', disk: '50 GB', note: 'Recommended for active guilds and 16–32 concurrent players.' },
+        large: { ram: '16 GB', cpu: '6 Cores', disk: '80 GB', note: 'Extra memory headroom for large bases and long-running saves.' }
+      },
+      valheim: {
+        small: { ram: '4 GB', cpu: '2 Cores', disk: '20 GB', note: 'Plenty for vanilla or Valheim Plus co-op.' },
+        medium: { ram: '6 GB', cpu: '3 Cores', disk: '30 GB', note: 'Smooth exploration with BepInEx mods and multiple bases.' },
+        large: { ram: '8 GB', cpu: '4 Cores', disk: '50 GB', note: 'Ideal for heavily modded community realms.' }
+      },
+      cs2: {
+        small: { ram: '4 GB', cpu: '2 Cores', disk: '45 GB', note: 'Crisp sub-tick 5v5 scrims and private practice.' },
+        medium: { ram: '6 GB', cpu: '3 Cores', disk: '60 GB', note: 'Great for 24-slot community servers and Workshop maps.' },
+        large: { ram: '8 GB', cpu: '4 Cores', disk: '80 GB', note: 'Built for high-slot surf, retake, or zombie escape servers.' }
+      },
+      ark: {
+        small: { ram: '12 GB', cpu: '4 Cores', disk: '60 GB', note: 'Single-map ARK: Survival Ascended with CurseForge mods.' },
+        medium: { ram: '16 GB', cpu: '6 Cores', disk: '100 GB', note: 'Active tribe server with higher dino/structure limits.' },
+        large: { ram: '24 GB', cpu: '8 Cores', disk: '150 GB', note: 'Designed for multi-map Cross-ARK clusters.' }
+      }
+    };
+
+    const estGame = document.getElementById('estGame');
+    const estPlayers = document.getElementById('estPlayers');
+    function updateEstimator() {
+      const rec = sizingMatrix[estGame.value][estPlayers.value];
+      document.getElementById('estRam').textContent = rec.ram;
+      document.getElementById('estCpu').textContent = rec.cpu;
+      document.getElementById('estDisk').textContent = rec.disk;
+      document.getElementById('estNote').textContent = rec.note;
+    }
+    estGame.addEventListener('change', updateEstimator);
+    estPlayers.addEventListener('change', updateEstimator);
   </script>
 </body>
 </html>
